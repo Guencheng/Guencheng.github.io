@@ -71,6 +71,64 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Capstone" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/08/Capstone/" class="article-date">
+  <time class="dt-published" datetime="2021-09-08T15:11:18.000Z" itemprop="datePublished">2021-09-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/08/Capstone/">Capstone</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​                                                    My capstone of X Academy</p>
+<p>​    In X Academy, everyone should do a project using what they learned here. In this article, I will discuss what I did in my capstone.</p>
+<p>​    My program in X Academy was called Data Science so my capstone was related to processing data. I found my data set in a huge data set website called Kaggle. This data set was about the potability of water. It gave me a few properties of a kind of water such as ph, hardness, solids and I needed to use these properties to find whether this kind of water was potable.</p>
+<p>​    First, I would show the first five rows of my data set.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/8f6c1cb22acc0a8e.jpg"> </p>
+<p>​              By looking at the data, we could find that some data was lost in this data set so we needed to fill these lost data. The picture showed how many lost data are there in this data set.  </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/ad611dc7bd7b98bf.jpg"> </p>
+<p>​    For this purpose, I chose to use the mean of the whole column to fill it as the mean of the whole column could make fewer errors. I took ph as example to show my codes.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/0a3c68cc954731a5.jpg"> </p>
+<p>​             After dealing with lost data of ph, sulfate and trihalomethanes, all lost data was filled again.  </p>
+<p>  <img src="https://s3.bmp.ovh/imgs/2021/09/cafa4947ad1610b7.jpg">  </p>
+<p>​             Besides lost data, we could also find that some data in this data set was very unreasonable. For example, the ph of a kind of water was 2 but the data set still said that this water was potable. To get an accurate result, we needed to drop these data. Take ph as example, we should know the right save range for ph first, which was 6 to 9. Then, we checked the ph values of all kinds of water one by one. If the ph of this kind of water was lower than 6 or higher than 9 and the data set still said it was potable, we would drop the whole row of this water as this row of data was unreasonable.  </p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/hb8C01"><img src="https://z3.ax1x.com/2021/09/08/hb8C01.jpg" alt="hb8C01.jpg"></a></p>
+<p>​     After doing this, the whole data was cleaned completely. The next step was to choose a model to analyze my data. I would like to tell an interesting story in this step. At first, I did not realize that this was a classification question so I chose a lot of regression models which was a waste of time. However, maybe regression was not completely useless. If I rounded the value predicted by the regression model, I may get a result which was similar to that got from classification models. In fact, I tried many classification models but there was a problem. Many models predicted that all water was not potable in this data set. I checked my codes for many times and I was sure that my codes were correct so I thought this was the problem of the data set which means the values in this data set were not very correct. Finally, I decided to use decision tree as my classification as it can both output 1 and 2. The picture below was my code.</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/hb8lAP"><img src="https://z3.ax1x.com/2021/09/08/hb8lAP.jpg" alt="hb8lAP.jpg"></a></p>
+<p>​    So far, I had finished most of my code. The last step was to check the results predicted by my model. First, we can see that the accuracy of this model was only 77 precent which means the result of this model was not so good.</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/hb8M7t"><img src="https://z3.ax1x.com/2021/09/08/hb8M7t.jpg" alt="hb8M7t.jpg"></a></p>
+<p>​    The picture above showed the specific result predicted by the model. We can find that, for potable water, the accuracy of my model was 50 precent. However, for unpotable water, the accuracy was 85 percent. So for this code, it had better be used to predict whether the water was unpotable instead of using it to predict whether the water was potable. In another words, if the model says the water is unpotable, you can trust it. However, if the model says the water is potable, you had better do not drink it.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/08/Capstone/" data-id="cktbnm44l0000h4w3gebn273u" data-title="Capstone" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Banqioa-project" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/08/Banqioa-project/" class="article-date">
@@ -1198,55 +1256,6 @@
 
 
   
-    <article id="post-coding-activity" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/17/coding-activity/" class="article-date">
-  <time class="dt-published" datetime="2021-05-17T11:58:48.000Z" itemprop="datePublished">2021-05-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/17/coding-activity/">coding activity</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>​                                          A report on coding activity (Based on Python)</p>
-<p>Introduction:</p>
-<p>One week ago, I took part in a coding activity about the difference among several foreign languages. This report aims to highlight what happened, what I learned, and how I felt.</p>
-<p>Summary:</p>
-<p>In this topic, it was hard to do research based on the whole languages so we just chose the words that represented the number 0 to 9 in each language. Our supervisor offered us three ways to analyze it. The first and simplest way was to use the first character of each word to identify whether they were similar. With words that had the same meaning in different languages, if their first characters were identified, we suggested these words were similar. Otherwise, we suggested they were different. Based on this idea, we could choose two languages and compare the words that meant from 0 to 9 one by one. After comparing the words, we would give these two languages points that were the same as the number of pairs of words which had the same first character. To compare the similarity among different languages, we could suggest that the two languages with more points were more similar than others. The other two methods were much more difficult because they analyzed data based on Maths such as using vectors.</p>
-<p>Finding:</p>
-<p>As I had just finished my Python lessons, this task was not so easy for me. For example, I could not remember all the formats in Python and I sometimes mistook some formats in VB for those in Python. But that was OK because Mr.Chen could offer me some help if necessary. From my perspective, this coding activity not only aimed to practice using Python but also contributed to how write codes. For example, when I met some problems in using Python. We did not need to ask teachers for help immediately, instead we could go to the Internet as there is plenty of information about Python on the Internet and our ability of self-study could be improved in this way. Moreover, I learned that getting results was not the real aim of this activity. During the activity, I thought that I just need to calculate the results by myself and then, printed them using Python. But Mr.Chen did not agree with me. He said that using Python was to make data analyze more convenient. If I got results in this way, this activity would lose its value and this could not deal with a large amount of information.</p>
-<p>Conclusion:</p>
-<p>  From the activity, I found that there were still a lot for me to learn in Python. I hope that I can attend it again.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/17/coding-activity/" data-id="ckosk6g240000ukw3bzyebi19" data-title="coding activity" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -1297,6 +1306,10 @@
       <ul>
         
           <li>
+            <a href="/2021/09/08/Capstone/">Capstone</a>
+          </li>
+        
+          <li>
             <a href="/2021/09/08/Banqioa-project/">Banqioa project</a>
           </li>
         
@@ -1310,10 +1323,6 @@
         
           <li>
             <a href="/2021/06/09/The-Joy-of-X-reading-1/">The Joy of X(reading 1)</a>
-          </li>
-        
-          <li>
-            <a href="/2021/05/17/The-information-I-got-after-visiting-Cambridge-official-wedsite/">The information I got after visiting Cambridge&#39; official wedsite</a>
           </li>
         
       </ul>
