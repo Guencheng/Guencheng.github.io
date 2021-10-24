@@ -71,6 +71,59 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Python-Linear-Regression-of-price-of-second-hand-car" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/10/24/Python-Linear-Regression-of-price-of-second-hand-car/" class="article-date">
+  <time class="dt-published" datetime="2021-10-24T08:33:17.000Z" itemprop="datePublished">2021-10-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/10/24/Python-Linear-Regression-of-price-of-second-hand-car/">Python--Linear Regression of price of second-hand car</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>This time, the task is about how to use regression to predict the price of second-hand car through some properties of the car. First of all, we should introduce some function to Python which has to been done every time. In addition, the dataset should be downloaded here. </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/3bb4f5f85bfa85ef.png"> </p>
+<p>This dataset has 31 rows including SaleID, 15 known properties and 15 unknown properties. Unknown properties are expressed by V.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/bea4e0cc979c7545.png"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/9e4387b8cda76031.png"> </p>
+<p>  Then, in the regression, SaleID and name of the cars are useless properties which should be dropped or the accuracy of the result may be affected.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/2f9cd6386ed91a79.png"> </p>
+<p>  There is another annoying point. The row of price is between the rows of known properties and the rows of unknown properties so we have to put price in the first row which is convenient for us to separate price and properties.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/540cfc8e67e7f000.png"> </p>
+<p>  Next step is to separate test dataset and train dataset as well as price and properties. However, it is strange that unknown properties are all indicated by strings so we need to change the data type of unknown properties. The code with red line is what I did to solve this problem. </p>
+<p>  <img src="https://s3.bmp.ovh/imgs/2021/10/680a10c68fab539c.png"> </p>
+<p> Finally, the most important step, use Linear Regression to train the data.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/713d7c3c59a05127.png"> </p>
+<p> So far, all steps are done but we also need to test how well is the model trained. Here, I add the absolute difference of all trained value and all real value and then divide them by the total number. The final error is 2840 yuan. </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/fe9a4937a7fdbfdb.png"> </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/10/24/Python-Linear-Regression-of-price-of-second-hand-car/" data-id="ckv4zf0vp0000i4w3bhbx2m9u" data-title="Python--Linear Regression of price of second-hand car" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Arduino-1-remote-controlled-car" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/10/07/Arduino-1-remote-controlled-car/" class="article-date">
@@ -523,50 +576,6 @@
 
 
   
-    <article id="post-The-Joy-of-X-reading-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/09/The-Joy-of-X-reading-1/" class="article-date">
-  <time class="dt-published" datetime="2021-06-09T13:18:14.000Z" itemprop="datePublished">2021-06-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/06/09/The-Joy-of-X-reading-1/">The Joy of X(reading 1)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>​                                                Reading feelings of The Joy of X</p>
-<p>​    This book was recommended by my teacher. I was reading The Beauty of Math before I knew the book but The Beauty of Math was too hard for me to understand it. To make the reading more meaningful, I started reading The Joy of X. There is something similar between these two books. For example, they both explain that how important is Math in our daily life. The only difference is that The Beauty of Math concentrates on the aspect of Internet but The Joy of X concentrates on changing Math knowledge into real life situations. Also, there is something interesting. I found that these books all started from discussing the relationships between languages , tools and numbers as well as their histories. Maybe the discoveries of languages, tools and numbers are reasons why technology can develop so fast.</p>
-<p>​    Then, I want to talk about what I really learnt from this book. The first is that I understand the importance of complex number. When I2 is equal to -1, we call I is complex number. As I thought before, complex number is meaningless because it does not exist in real life. However, after reading the book, I found that industry and engineering can not work without complex number in some particular situations. To summarize it, complex number can help to give some special orders when machines are working. Moreover, I learnt that one of the functions of Math is to make our life more convenient. I know that the digits which we are using today are called Arabic number but before we use Arabic number, there is a different number system called Roman number. The reason why we use Arabic number today instead of Roman number is that Roman number is nit convenient enough. For example, nine thousand nine hundred and ninety-nine expressed by Arabic number is 9999. However, if we use Roman number to express it, it will be MMMMMMMMMCMXCIX which is hard to recognize. Another example is the discovery of logarithm, it also make the expression of large numbers easier.</p>
-<p>​    Overall, as the time flows, I will learn more and harder knowledge. However, the most important is that I have to learn how to use the knowledge in practice and application.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/09/The-Joy-of-X-reading-1/" data-id="ckppi1ihh00000gw35x59hpai" data-title="The Joy of X(reading 1)" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -617,6 +626,10 @@
       <ul>
         
           <li>
+            <a href="/2021/10/24/Python-Linear-Regression-of-price-of-second-hand-car/">Python--Linear Regression of price of second-hand car</a>
+          </li>
+        
+          <li>
             <a href="/2021/10/07/Arduino-1-remote-controlled-car/">Arduino 1 -- remote-controlled car</a>
           </li>
         
@@ -630,10 +643,6 @@
         
           <li>
             <a href="/2021/09/09/The-revise-of-X-Academy/">The revise of X Academy</a>
-          </li>
-        
-          <li>
-            <a href="/2021/09/09/The-preparation-of-X-Academy/">The preparation of X Academy</a>
           </li>
         
       </ul>
