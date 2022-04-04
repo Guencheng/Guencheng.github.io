@@ -71,6 +71,473 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Introduction-of-window-program" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/05/Introduction-of-window-program/" class="article-date">
+  <time class="dt-published" datetime="2021-12-05T08:45:34.000Z" itemprop="datePublished">2021-12-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/12/05/Introduction-of-window-program/">Introduction of window program</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​                                                   An introduction of window program</p>
+<p>When I write codes, I always wonder that how others can use my code, especially for those who do not know much about Python. If they know little about Python, they even do not know how to run a single instruction. So I have to make my program more kind which means I have to improve the interactivity of my program. To achieve this purpose, I decide to introduce window program. In window program, there is button and displaying screen. By using this component, users can understand the purpose of the code better because tips can be written in the button or screen. For example, if I write a ‘plus 1’ on the button, users will know that if they click on the button, a number will plus 1.  Here is an example. First, I will show my original codes</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/12/d8baca2fbd3444ea.png"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/12/fc8f296435b91c4e.png"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/12/2bc3cd327d8f2e51.jpg"> </p>
+<p>If you know little about Python, of course this is confusing. You will not know that to run this code you have to input ‘pickones()’ which is a fuction. But if I turn this code into window program.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/12/3d0feedde72f342e.png"> </p>
+<p>It is more clear right? There is a button on the bottom of the left side called ‘pickone’, when users see this, they will know clicking the button can pick one. In another word, they know to run the code, they need to click the button. And the displaying screen is on the right of the button so that they can see the result. The background code of the window is shown below(use tkinter).</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/12/f769e917ce2e79a8.png"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/12/0a24a8da360583b0.png"> </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/05/Introduction-of-window-program/" data-id="ckwt0b70f0000g4w3fdisexba" data-title="Introduction of window program" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Python-Linear-Regression-of-price-of-second-hand-car" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/10/24/Python-Linear-Regression-of-price-of-second-hand-car/" class="article-date">
+  <time class="dt-published" datetime="2021-10-24T08:33:17.000Z" itemprop="datePublished">2021-10-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/10/24/Python-Linear-Regression-of-price-of-second-hand-car/">Python--Linear Regression of price of second-hand car</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>This time, the task is about how to use regression to predict the price of second-hand car through some properties of the car. First of all, we should introduce some function to Python which has to been done every time. In addition, the dataset should be downloaded here. </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/3bb4f5f85bfa85ef.png"> </p>
+<p>This dataset has 31 rows including SaleID, 15 known properties and 15 unknown properties. Unknown properties are expressed by V.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/bea4e0cc979c7545.png"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/9e4387b8cda76031.png"> </p>
+<p>  Then, in the regression, SaleID and name of the cars are useless properties which should be dropped or the accuracy of the result may be affected.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/2f9cd6386ed91a79.png"> </p>
+<p>  There is another annoying point. The row of price is between the rows of known properties and the rows of unknown properties so we have to put price in the first row which is convenient for us to separate price and properties.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/540cfc8e67e7f000.png"> </p>
+<p>  Next step is to separate test dataset and train dataset as well as price and properties. However, it is strange that unknown properties are all indicated by strings so we need to change the data type of unknown properties. The code with red line is what I did to solve this problem. </p>
+<p>  <img src="https://s3.bmp.ovh/imgs/2021/10/680a10c68fab539c.png"> </p>
+<p> Finally, the most important step, use Linear Regression to train the data.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/713d7c3c59a05127.png"> </p>
+<p> So far, all steps are done but we also need to test how well is the model trained. Here, I add the absolute difference of all trained value and all real value and then divide them by the total number. The final error is 2840 yuan. </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/fe9a4937a7fdbfdb.png"> </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/10/24/Python-Linear-Regression-of-price-of-second-hand-car/" data-id="ckv4zf0vp0000i4w3bhbx2m9u" data-title="Python--Linear Regression of price of second-hand car" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Arduino-1-remote-controlled-car" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/10/07/Arduino-1-remote-controlled-car/" class="article-date">
+  <time class="dt-published" datetime="2021-10-07T06:01:42.000Z" itemprop="datePublished">2021-10-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/10/07/Arduino-1-remote-controlled-car/">Arduino 1 -- remote-controlled car</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p> After I learnt some basic knowledge about Arduino, I did a remote-controlled car with the help of some videos on the Internet and this is a record of how I made this car. The whole record will be broken into two parts. The first part aims to show how I put different pieces together and the second part will the codes used in this car.</p>
+<p>  This is the part of putting pieces together. First I will show the final product.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/3e2f39194ca70208.png"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/9296c887ceedb909.png"> </p>
+<p>The whole car can be broken into three parts. Next, I will introduce them one by one.</p>
+<p>——Mainboard</p>
+<p>  Mainboard is the most difficult part to weld because there are so many small pieces in it. Before we weld it, it is empty.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/881812d638e3e8d7.png"> </p>
+<p> After I weld it, it is filled with small components.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/f901913cf3281eb0.png"> </p>
+<p> We can know what to weld by looking at the tips on the empty board. There are many patterns on the empty board and just find the component that follows the pattern. Do not forget that some components have positive and negative sides. And fix component well before you weld it or it will look ugly.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/9b21f01a797d0946.png"> </p>
+<p> After welding small pieces , we should put the mainboard and UNO board together and fix them to the bottom board of the car.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/d5661acc3c0e3502.png"> </p>
+<p>——Sensor part</p>
+<p>  Sensor part aims to achieve some functions of this car such as making the car move following a path and making the car avoid barriers automatically. First, following path is achieve by a infra-red</p>
+<p>sensor. It can emit infra-red light and receive the reflected light to determine the color of the road.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/a3af0453a0cd1496.png"> </p>
+<p> The next part is avoiding barriers. The principle of this part is similar to that of following path. It also used infers-red light to calculate the distance between barrier and it self to avoid barrier.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/44ae1a01124b1ed2.png"> </p>
+<p>——battery and wheel part</p>
+<p>  This is the most easy part to do because there is no special tips in this part. However, it is the most important part because it is the power of the whole car.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/10/71faa7a2b56b20ea.png"> </p>
+<p> That is all for the three parts and finally we just need to connect wires between different parts.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/10/07/Arduino-1-remote-controlled-car/" data-id="ckugjh7e00000osw3elqgc6b3" data-title="Arduino 1 -- remote-controlled car" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Critical-thinking-and-writing" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/10/07/Critical-thinking-and-writing/" class="article-date">
+  <time class="dt-published" datetime="2021-10-07T05:48:16.000Z" itemprop="datePublished">2021-10-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/10/07/Critical-thinking-and-writing/">Critical thinking and writing</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​    Recently, I read a new book called “Critical thinking and writing”. So far, I am interested in a topic called “Argument” in this book. When people write academic paper or articles, argument is hard to avoid so how to write a complete and good argument is really necessary. </p>
+<p>​    First, what is argument should be indicated. Argument is made of three parts—precondition, reason and conclusion. Second, when does argument appear. My answer is ‘question’. If people have different opinions or confuse about a question, argument will exist because argument aims to express an ideal logically and clearly. To achieve this, a good reason is necessary because other people will depend on the reason to determine whether you are right. And for all reasons, it must be objective. “Objective” means that the reason is suitable for nearly all situations not just one person’s feeling.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/10/07/Critical-thinking-and-writing/" data-id="ckugisttz000084w32t2hcxho" data-title="Critical thinking and writing" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-The-reading-of-infinite-powers" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/09/The-reading-of-infinite-powers/" class="article-date">
+  <time class="dt-published" datetime="2021-09-09T15:27:41.000Z" itemprop="datePublished">2021-09-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/09/The-reading-of-infinite-powers/">The reading of infinite powers</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​                                                                     The reading of infinite powers</p>
+<p>​     This is the second Math book I read in my high school year and the previous book is The joy of X. Actually, the general content of these two books are similar so I would not discuss about the content of this book instead I would like to talk about some traits of this book.</p>
+<p>​     A famous scientist used to say that ‘You had better learn calculus as it is the language</p>
+<p>of god’ I believe this sentence and calculus is really necessary in our daily life. You may not </p>
+<p>see it directly and actually it is applicated nearly everywhere. From our phones to the whole </p>
+<p>internet system, all places need calculus. I highlight the importance of calculus here again. In </p>
+<p>this book, the writer also wants to highlight the importance of calculus so he introduced the </p>
+<p>electromagnetic waves first, which is discovered with the help of calculus and is very </p>
+<p>necessary to electronic devices. Then, the writer goes deeper and deeper to show us that</p>
+<p> calculus is very interesting and important. This book also tells the knowledge of calculus in </p>
+<p>the form of stories which is suitable for students to read. </p>
+<p>​      I enjoy the story of the area of circle most because I think this is the greatest story to </p>
+<p>introduce calculus and nearly all books about calculus would talk about it. The first reason is </p>
+<p>the area of circle is simple. The second reason is the area of circle perfectly explain the </p>
+<p>center idea of calculus.</p>
+<p>​      Overall, this book is good. I think this book is deeper in calculus than the joy of X. The </p>
+<p>joy of X is like the introduction of calculus and infinite powers is the applications of </p>
+<p>calculus.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/09/The-reading-of-infinite-powers/" data-id="cktd35mow0000uow33eyu3g42" data-title="The reading of infinite powers" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-The-revise-of-X-Academy" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/09/The-revise-of-X-Academy/" class="article-date">
+  <time class="dt-published" datetime="2021-09-09T13:16:49.000Z" itemprop="datePublished">2021-09-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/09/The-revise-of-X-Academy/">The revise of X Academy</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​                                                                     The revise of X Academy</p>
+<p>   On the thirteenth of August, I successfully finished my activity in X Academy. In these 12 days, I learnt both computer skills and learning skills. This article aims to discuss what I learn and what I thought in these 12 days.</p>
+<p>​    First, I would like to discuss the people I saw in X Academy. The people that impressed me most were my academic leaders. I first met them in the hotel. One of them study in MIT and one of them study in Stanford. I was deeply surprised by their universities. Before, I thought these universities are far away from me. But now, I know that there are many powerful people around me and I need to learn from them. Another thought I got in these 12 days was that I need to widen my horizons. I mean, I can not just concentrate my view in my school. Maybe, in my school, I was not bad. However, if I widen my horizons to the whole world, I could find that there are still a lot for me to do. The people I met in X Academy had all kinds of personalities and they have their own strong points. They are also my competitors so I also need to compare them with me to make me better. Also, I found that there are so many good students in this day so I should think about how to make me stand out of them.</p>
+<p>​    Secondly, it is about my learning skills. During these 12 days, the most useful thing I learnt was how to study by myself. Before, if I meet problems, I would ask my teachers for help. This is good obviously. However, I should know that teacher would not appear every time so I had to learn how to study alone. Before, my only path to solve difficult problems was to ask my teacher for help. But now, I can use the Internet as my another useful partner. Generally speaking, I can not depend on others to study any more, I have to learn to find resources and solve problems by myself.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/09/The-revise-of-X-Academy/" data-id="cktcyh2pe0000zgw34oou07xa" data-title="The revise of X Academy" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-The-preparation-of-X-Academy" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/09/The-preparation-of-X-Academy/" class="article-date">
+  <time class="dt-published" datetime="2021-09-09T12:22:13.000Z" itemprop="datePublished">2021-09-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/09/The-preparation-of-X-Academy/">The preparation of X Academy</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​                                                             The preparation of X Academy</p>
+<p>​    Before I went to X Academy, I had to do some preparation for this activity to make sure that I could understand what teachers would say. My program in X Academy was called Data Science and I divided my preparation work into three parts – basic Math abilities, basic machine learning knowledge and basic applications of Python.</p>
+<p>​    First, I would discuss Math anilities. Among Math abilities, I also divided it into three parts—functions, linear algebra and statistic. The reason why I needed to learn all kinds of functions was because, in data analysis, we may need to use function to calculate some values such as entropy. Additionally, functions are helpful when we learnt some principles of a model. Then, it was about linear algebra which was the most difficult part in Math abilities. However, it was also essential as Many models are based on linear algebra. Statistic was the most important part because we must use statistic models when we analyzed data such as using normal distribution.</p>
+<p>​    Secondly, it was about machine learning. I did not need to know it in detail because I would learn it in my program. In the stage of preparation, I just need to learn what each model is like.</p>
+<p>​    Last, I would talk about Python. This is the most essential part among my preparation as I would use Python to analyze data in my program. If I know little about it, it would be hard for me to write or read codes, which may make me fall behind the class.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/09/The-preparation-of-X-Academy/" data-id="cktcwjjtu0000vkw36sx6cnxz" data-title="The preparation of X Academy" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Capstone" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/08/Capstone/" class="article-date">
+  <time class="dt-published" datetime="2021-09-08T15:11:18.000Z" itemprop="datePublished">2021-09-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/08/Capstone/">Capstone</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​                                                    My capstone of X Academy</p>
+<p>​    In X Academy, everyone should do a project using what they learned here. In this article, I will discuss what I did in my capstone.</p>
+<p>​    My program in X Academy was called Data Science so my capstone was related to processing data. I found my data set in a huge data set website called Kaggle. This data set was about the potability of water. It gave me a few properties of a kind of water such as ph, hardness, solids and I needed to use these properties to find whether this kind of water was potable.</p>
+<p>​    First, I would show the first five rows of my data set.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/8f6c1cb22acc0a8e.jpg"> </p>
+<p>​              By looking at the data, we could find that some data was lost in this data set so we needed to fill these lost data. The picture showed how many lost data are there in this data set.  </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/ad611dc7bd7b98bf.jpg"> </p>
+<p>​    For this purpose, I chose to use the mean of the whole column to fill it as the mean of the whole column could make fewer errors. I took ph as example to show my codes.</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/0a3c68cc954731a5.jpg"> </p>
+<p>​             After dealing with lost data of ph, sulfate and trihalomethanes, all lost data was filled again.  </p>
+<p>  <img src="https://s3.bmp.ovh/imgs/2021/09/cafa4947ad1610b7.jpg">  </p>
+<p>​             Besides lost data, we could also find that some data in this data set was very unreasonable. For example, the ph of a kind of water was 2 but the data set still said that this water was potable. To get an accurate result, we needed to drop these data. Take ph as example, we should know the right save range for ph first, which was 6 to 9. Then, we checked the ph values of all kinds of water one by one. If the ph of this kind of water was lower than 6 or higher than 9 and the data set still said it was potable, we would drop the whole row of this water as this row of data was unreasonable.  </p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/hb8C01"><img src="https://z3.ax1x.com/2021/09/08/hb8C01.jpg" alt="hb8C01.jpg"></a></p>
+<p>​     After doing this, the whole data was cleaned completely. The next step was to choose a model to analyze my data. I would like to tell an interesting story in this step. At first, I did not realize that this was a classification question so I chose a lot of regression models which was a waste of time. However, maybe regression was not completely useless. If I rounded the value predicted by the regression model, I may get a result which was similar to that got from classification models. In fact, I tried many classification models but there was a problem. Many models predicted that all water was not potable in this data set. I checked my codes for many times and I was sure that my codes were correct so I thought this was the problem of the data set which means the values in this data set were not very correct. Finally, I decided to use decision tree as my classification as it can both output 1 and 2. The picture below was my code.</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/hb8lAP"><img src="https://z3.ax1x.com/2021/09/08/hb8lAP.jpg" alt="hb8lAP.jpg"></a></p>
+<p>​    So far, I had finished most of my code. The last step was to check the results predicted by my model. First, we can see that the accuracy of this model was only 77 precent which means the result of this model was not so good.</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/hb8M7t"><img src="https://z3.ax1x.com/2021/09/08/hb8M7t.jpg" alt="hb8M7t.jpg"></a></p>
+<p>​    The picture above showed the specific result predicted by the model. We can find that, for potable water, the accuracy of my model was 50 precent. However, for unpotable water, the accuracy was 85 percent. So for this code, it had better be used to predict whether the water was unpotable instead of using it to predict whether the water was potable. In another words, if the model says the water is unpotable, you can trust it. However, if the model says the water is potable, you had better do not drink it.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/08/Capstone/" data-id="cktbnm44l0000h4w3gebn273u" data-title="Capstone" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Banqioa-project" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/08/Banqioa-project/" class="article-date">
+  <time class="dt-published" datetime="2021-09-08T15:04:50.000Z" itemprop="datePublished">2021-09-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/08/Banqioa-project/">Banqioa project</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>​                                                The report of Banqiao project (meeting 1)</p>
+<p>​    On July 2, we went to Banqiao factory again. This time, we were able to take a look of a sample machine which was used to remove burrs on some particular components. Before this step was done by workers. However, the working environment of this job was very hard as this job was boring and workers would work in smoke. As a result, it was hard to employ workers and the cost of employing workers was high. To solve this problem, people wanted to use machine to replace most workers and just employed a few people to control it. In this article, I wanted to introduce the sample machine. Actually, the machine that I talked about this time was not the final product. It was just a sample to show how this kind of machine worked.</p>
+<p>​    First, I wanted to show a general appearance of the sample machine.(figure1.1 1.2)</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/3c6ff6b47b3c3c96.jpg"> </p>
+<p>figure 1.1</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/3806f5ae229e73a3.jpg"> </p>
+<p>figure 1.2</p>
+<p>​    Then, I would talk about it part by part. The first part was a holder to place components before machine worked. (figure 2.1) </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/35c213af8e02e7aa.jpg"> </p>
+<p>figure 2.1</p>
+<p>​    In this holder, there were several supports to hold cylinder components. If the component had a different shape, we just needed to change the shape of supports and change the code of the machine. Under each support, there was a weight sensor which was used to check whether the component was placed well. Workers were needed to place components to the holder so workers could not be replaced completely. But this did not matter, the job was much better than the job which was needed to remove burrs.</p>
+<p>​    The machine arm was also very important as cutters were fixed in this machine. It was the machine arm that controlled the components and put them towards the cutters. Moreover, burrs almost appeared on the same places of each component because burrs was caused by a few particular reasons which were same for all components. As a result, the machine arm just needed to repeat several steps. Also, you could find that the front part of the machine arm was much thinner as the part moved many times so it should be flexible. The latter part of the machine arm was much thicker as this part should be stable so that the whole machine would not shake easily. (figure 3.1)</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/b724c262c83ec72e.jpg"> </p>
+<p>figure 3.1</p>
+<p>​    The last part was very simple – cutters and sand paper. Cutters were used to remove bigger burrs and sand paper was used to remove smaller burrs to make the component flatter. However, these two parts got broken easily so they were needed to be replaces regularly. (figure 4.1 – cutters) (figure 4.2 – sand paper) </p>
+<p>  <img src="https://s3.bmp.ovh/imgs/2021/09/02b0b18f7a8c9424.jpg"> </p>
+<p>figure 4.1 —- cutters</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2021/09/e310dae9a3c7ecc4.jpg"> </p>
+<p>Figure 4.2 – sand paper</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/08/Banqioa-project/" data-id="cktbn0xhu0000i4w3d1yh0ybe" data-title="Banqioa project" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-coding-activity-7-0" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/08/coding-activity-7-0/" class="article-date">
@@ -104,1134 +571,6 @@
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-The-record-of-reading-The-joy-of-X-2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/08/The-record-of-reading-The-joy-of-X-2/" class="article-date">
-  <time class="dt-published" datetime="2021-09-08T09:07:17.000Z" itemprop="datePublished">2021-09-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/08/The-record-of-reading-The-joy-of-X-2/">The record of reading(The joy of X 2)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>​                                                                   The joy of X (2)</p>
-<p>​    This article is about the last four parts of this book – shape, change, data and future. Following the previous two parts—number and relationship, in this article, I will talk about my thoughts and questions.</p>
-<p>​    In the third part—shape, The magic of circular core attracts me most because I seldom meet circular core. However, in the first several pages, there is totally no content related to circular core instead it tells a place called gallery of the echo(oval). At the same page, it also tells a new concept called parabola. Although these two things are not related to circular core, actually both of them are a part of circular core(These are related to some properties of circular core. If you are also interested in it, you can search it online. They are about how to cut a circular core.). This chapter is very clever because it explains circular core in such a practical and interesting way. Also, sine wave is mentioned. To be honest, sine wave is more useful than circular core because many things in this world even in this space all follow the rules of sine wave. However, it is very complex so I just give a short mention here(Actually, the sunset time, sunrise time and Big Bang are all related to sine wave).\</p>
-<p>​    The fourth part is particularly essential because it is about calculus. We have to admit that calculus is very important in our science study, especially in Physics. Many Physics questions can not be worked out without calculus. Also, the concept of infinity is very essential. Broadly speaking, calculus can help us study the rate of change of object A related to object B so it can also help us to study some special situations, such as the largest number.</p>
-<p>​    The fifth part is data or I can call it statistic. Broadly speaking, it is used to study the possibility of one particular thing happening. Or I can say it can predict the future. This concept is used in many areas, such as internet. You may find that, nowadays, internet may recommend some things to you. And strangely, you may really be interested in some of them. This is all based on data. It can predict what you want.</p>
-<p>​    The last part is just about some interesting questions. If you are interested in it, you can read it by yourself. Because there is too much information in the last part, I do not want to talk about it seriously.</p>
-<p>​    That is my whole thoughts about this book. I have to admit that this book is very good. It can attract you interest in studying Math. Also, it can widen my horizons in the area of Math. Ok, that is all.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/08/The-record-of-reading-The-joy-of-X-2/" data-id="cktba5h63000010w3es5088yg" data-title="The record of reading(The joy of X 2)" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-The-Joy-of-X-reading-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/06/09/The-Joy-of-X-reading-1/" class="article-date">
-  <time class="dt-published" datetime="2021-06-09T13:18:14.000Z" itemprop="datePublished">2021-06-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/06/09/The-Joy-of-X-reading-1/">The Joy of X(reading 1)</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>​                                                Reading feelings of The Joy of X</p>
-<p>​    This book was recommended by my teacher. I was reading The Beauty of Math before I knew the book but The Beauty of Math was too hard for me to understand it. To make the reading more meaningful, I started reading The Joy of X. There is something similar between these two books. For example, they both explain that how important is Math in our daily life. The only difference is that The Beauty of Math concentrates on the aspect of Internet but The Joy of X concentrates on changing Math knowledge into real life situations. Also, there is something interesting. I found that these books all started from discussing the relationships between languages , tools and numbers as well as their histories. Maybe the discoveries of languages, tools and numbers are reasons why technology can develop so fast.</p>
-<p>​    Then, I want to talk about what I really learnt from this book. The first is that I understand the importance of complex number. When I2 is equal to -1, we call I is complex number. As I thought before, complex number is meaningless because it does not exist in real life. However, after reading the book, I found that industry and engineering can not work without complex number in some particular situations. To summarize it, complex number can help to give some special orders when machines are working. Moreover, I learnt that one of the functions of Math is to make our life more convenient. I know that the digits which we are using today are called Arabic number but before we use Arabic number, there is a different number system called Roman number. The reason why we use Arabic number today instead of Roman number is that Roman number is nit convenient enough. For example, nine thousand nine hundred and ninety-nine expressed by Arabic number is 9999. However, if we use Roman number to express it, it will be MMMMMMMMMCMXCIX which is hard to recognize. Another example is the discovery of logarithm, it also make the expression of large numbers easier.</p>
-<p>​    Overall, as the time flows, I will learn more and harder knowledge. However, the most important is that I have to learn how to use the knowledge in practice and application.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/09/The-Joy-of-X-reading-1/" data-id="ckppi1ihh00000gw35x59hpai" data-title="The Joy of X(reading 1)" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-The-information-I-got-after-visiting-Cambridge-official-wedsite" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/17/The-information-I-got-after-visiting-Cambridge-official-wedsite/" class="article-date">
-  <time class="dt-published" datetime="2021-05-17T12:34:15.000Z" itemprop="datePublished">2021-05-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/17/The-information-I-got-after-visiting-Cambridge-official-wedsite/">The information I got after visiting Cambridge&#39; official wedsite</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>​                                                             Cambridge program study</p>
-<p>\1.  You’re taught by experts in your field through a combination of lectures, practicals (where relevant), seminars, and regular small-group tuition known as ‘supervision’. These allow you to explore course material in much greater depth, investigate new approaches, receive regular feedback and clarify anything you’re unsure about. (why Cambridge)</p>
-<p><strong>2.</strong>   <strong>University is about</strong> <strong>trying new things.</strong> <strong>(social life)</strong></p>
-<p>\3.   Your time at Cambridge isn’t just about academic work – Cambridge will be your home for the duration of your course and it’s important that you have time out from your studies and get involved in all the opportunities the University and city have to offer. (student’s union)</p>
-<p>\4.   Cambridge students are typically ambitious, intelligent, motivated, hard-working, passionate, committed, curious, intellectually creative, independent thinkers, and able to manage their time effectively. (career)</p>
-<p>\5.   It allows you to keep your options open while equipping you with all the analytical, design and computing skills that underpin modern engineering practice. (course)</p>
-<p>\6.   We also have strong links with industry, with many research projects funded by industrial companies. (course)</p>
-<p>\7.   You’re required to complete six weeks of industrial experience by the end of the third year, obtained by deferring entry or during vacations. (course)</p>
-<p>\8.   Teaching is provided through a mixture of lectures, practicals, projects and supervisions, and in Year 1 you can typically expect around 22 hours of teaching each week. You’re assessed each year through coursework and written exams. (course)</p>
-<p>\9.   The broad foundation of the first two years (Part I) gives you an understanding of the basic principles of a wide range of subjects, together with an appreciation of the external pressures under which these ideas are likely to be applied. (course)</p>
-<p>\10.  You also undertake several coursework activities and projects, on topics including structural design, product design, presentation skills, drawing, laboratory experiments and computer programming. (course)</p>
-<p>\11.  A highlight of the year is the compulsory integrated design project where you work in teams to design and build robot vehicles which are then tested against each other. (course)</p>
-<p>\12.  In addition, you take an Extension Activity(selected from several topics, including both non-technical options, such as a language course, and technical options designed to introduce you to various measurement and test procedures in your chosen professional area) and, in the final term, choose two from a variety of design and computer-based projects or projects in a foreign language. (course)</p>
-<p>\13.  Many projects are associated with current Department research and have direct industrial input and application. (course) </p>
-<p>\14.  Many lecturers are leading academics working at the forefront of their field, so lectures are a fantastic opportunity to find out about the latest research. (course)</p>
-<p>\15.  provide the opportunity to discuss particular topics in more detail. They’re led by academics but you’re expected to contribute actively. (course)</p>
-<p>\16.  Practical work on some courses may be assessed. (course)</p>
-<p>\17.  A chance to carry out your own research, test out theories and put forward your own ideas. Your work might even get published while you’re still an undergraduate. (course)</p>
-<p>\18.  <strong>We admit the most academically able and motivated students and provide them with inspiring, world class teaching**</strong>. (course)**</p>
-<p>​                                                                                     刚需材料</p>
-<p>\1.   成绩 A<em>A</em>A</p>
-<p>- Applicants have generally achieved high grades in subjects relevant to their chosen course, and most students who apply have at least four or five 7/8/9s at GCSE (an A is considered equivalent to 7 and an A* is considered equivalent to 8/9). However, there are always exceptions and we don’t require a minimum number of 7/8/9s at GCSE. One of the strengths of the Cambridge admissions system is its ability to assess all applicants individually. （GCSE）</p>
-<p>- The typical conditional A Level offer will be A<em>AA or A</em>A<em>A, depending on the course. In countries where an A</em> grade at A Level is not available, three A grades would be acceptable.Some applicants may be set lower offers or more challenging ones. Applicants may be required to achieve A* in a particular subject(s) depending on individual circumstances. (AS&amp;ALEVEL)</p>
-<p>- Applicants taking four subjects won’t normally be at an advantage compared with those taking three. (AS&amp;ALEVEL)</p>
-<p>- the combination of A Level subjects, the grade achieved in the early A Level, and your engagement with other relevant subjects in Year 13 in and beyond the classroom. (AS&amp;ALEVEL)</p>
-<p>- At Cambridge, students are regularly assessed by examination and there’s no opportunity to resit any exams (with the exception of professional qualifying examinations in <a target="_blank" rel="noopener" href="https://www.undergraduate.study.cam.ac.uk/courses/medicine">Medicine</a> and <a target="_blank" rel="noopener" href="https://www.undergraduate.study.cam.ac.uk/courses/veterinary-medicine">Veterinary Medicine</a>). Therefore, we would be concerned about an applicant who is retaking large numbers of exams. (AS&amp;ALEVEL)</p>
-<p>- Further Mathematics is very strongly encouraged. (course)</p>
-<p>-We accept a wide variety of qualifications from all over the world and expect students to be achieving the highest grades – most successful applicants ultimately exceed the conditions of their offer. (course)</p>
-<p>\2. 雅思</p>
-<p>-<strong>IELTS Academic</strong>1 – normally a minimum overall grade of 7.5, usually with 7.0 or above in each element</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/17/The-information-I-got-after-visiting-Cambridge-official-wedsite/" data-id="ckoslce2g0000kow380pj42dh" data-title="The information I got after visiting Cambridge&#39; official wedsite" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-学自然科学的理由和如何证明自己是面试官要找的学生" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/17/%E5%AD%A6%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6%E7%9A%84%E7%90%86%E7%94%B1%E5%92%8C%E5%A6%82%E4%BD%95%E8%AF%81%E6%98%8E%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9D%A2%E8%AF%95%E5%AE%98%E8%A6%81%E6%89%BE%E7%9A%84%E5%AD%A6%E7%94%9F/" class="article-date">
-  <time class="dt-published" datetime="2021-05-17T12:30:48.000Z" itemprop="datePublished">2021-05-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/17/%E5%AD%A6%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6%E7%9A%84%E7%90%86%E7%94%B1%E5%92%8C%E5%A6%82%E4%BD%95%E8%AF%81%E6%98%8E%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9D%A2%E8%AF%95%E5%AE%98%E8%A6%81%E6%89%BE%E7%9A%84%E5%AD%A6%E7%94%9F/">学自然科学的理由和如何证明自己是面试官要找的学生</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>First, I want to talk about my original intentions to learn physical science. Since I was in my middle school, I have been interested in Physics, Chemistry and Maths. The most important two points that these subjects attract me is that I can explore the different relationships among different matters and I can look for the natures of different phenomenons. Moreover, many techniques today are based on physical science so, if I want to get an ideal job, the knowledge of physical science is very essential. Then, I would like to tell you about why I am an ideal student in this area. The first I want to mention is that my strong interest in this subject will make me keep working hard in this area. Also, I have had many important qualifications required in this area. For example, I am always keen to try new things and I love innovation. What’s more, I will not just pay attention to academic work. For my perspective, all things around the world are worth studying. And I always prefer to link my academic work with practical applications. During my normal study, I pay a lot attention to experiments because I reckon experiment will reflect the most real situations. </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/17/%E5%AD%A6%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%A6%E7%9A%84%E7%90%86%E7%94%B1%E5%92%8C%E5%A6%82%E4%BD%95%E8%AF%81%E6%98%8E%E8%87%AA%E5%B7%B1%E6%98%AF%E9%9D%A2%E8%AF%95%E5%AE%98%E8%A6%81%E6%89%BE%E7%9A%84%E5%AD%A6%E7%94%9F/" data-id="ckosl6fh00000a4w33luc5l4z" data-title="学自然科学的理由和如何证明自己是面试官要找的学生" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-thoughts-about-AMC" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/17/My-thoughts-about-AMC/" class="article-date">
-  <time class="dt-published" datetime="2021-05-17T12:28:07.000Z" itemprop="datePublished">2021-05-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/17/My-thoughts-about-AMC/">My thoughts about AMC</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>​                                        The review and thoughts of my AMC contest</p>
-<p>On the twentieth of February, my AMC grade was announced on the Internet. I got 78 at the end and I have to admit that I did poorly in this test. However, that is just one aspect of this test. I want to summarize the reasons for my fault and some experience I got during the time. </p>
-<p>The most important point of my fault is because of my unready preparation. Since the contest was on the winter holiday and it was nearly the Spring Festival, I spent so much time on recreation that I was lax for the contest, which meant I did not do enough practice. When I realized it, it was too late. As a result, when I did my paper, I felt very nervous and perplexed. The second point I would like to mention is that I did not get the correct method to do the paper. During the contest, I just kept solving the question I met so that I forgot the time, which meant I did not have enough time to go through all questions and picked the questions that I could answer because there was only 75 minutes for this contest. Consequently, I have to remember that, when I do papers, I should do the questions that I can do first and just cross the questions that I can not solve immediately. Then, when this part is finished, I can turn over to do the questions left. In this way, I can maximize my efficiency of solving time limited papers. The last aspect I would like to say is that I have to have a relaxing mind before doing the contest. To be honest, I was very nervous at that time as I knew that I did not prepare it well. As a result, my mind was not quiet enough to do questions peacefully, which directly influenced my performance. </p>
-<p>Though my preparation was not so ready, there was still something valuable I got. I had preliminarily built the ability to explain questions to foreign teachers. That was a really useful skill because, in the future, when I am abroad, I will have to explain my thoughts to my tutors and this can not be avoided so it is necessary to develop this qualification as soon as possible. In this aspect, I also want to share what I had learnt during the experience to explain questions to foreign teachers. First, when we explain a question to others, we should control the speed we speak because others may not come up with this point, we have to give them some time to think ,or nobody will know what we are saying. Also, we should describe all details because incomplete explanation is useless which means that we have to describe step by step. When we describe incompletely, some key points may be lost. As a result, it is hard for teachers to check our explanation. For example, when we explain a question to a person, first we should say why I come up with this method. Next, how to solve that. Then, show our provement. Last but not least, if we meet a question that we can not solve it, we should not give it up immediately. The first that we should do is to go through what we can do and try to make connection between them because 75% of all questions we meet are knowledge we have learnt. The reason why we can not solve it may be because we have not realized that it is the knowledge we know. Consequently, just keep our mind open and think more. In this way, even you can not solve the question to your teacher in the end, you can still show that you have clear steps on how to solve questions. Also, if you really meet an barrier, you teacher will provide you with a initial idea. Just follow and expand it.</p>
-<p>Overall, the AMC contest was valuable to me and I learnt a lot from it though the result was not very pleasant. Summarize experience and try to do better next time.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/17/My-thoughts-about-AMC/" data-id="ckosl384i0000wkw33bqigc4g" data-title="My thoughts about AMC" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-My-thoughts-about-three-different-Maths-competitions" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/17/My-thoughts-about-three-different-Maths-competitions/" class="article-date">
-  <time class="dt-published" datetime="2021-05-17T12:25:42.000Z" itemprop="datePublished">2021-05-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/17/My-thoughts-about-three-different-Maths-competitions/">My thoughts about three different Maths competitions</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>​                            My thoughts about three different Maths competitions</p>
-<p>So far, in my grade 10, I have attended three distinct Maths competitions which are UKMT, AMC and Euclid Maths Competition respectively. In this article, I will talk about my own experiences of these competitions as well as my thoughts about each competition and I will discuss the differences among these competitions.</p>
-<p>First, I want to talk about UKMT. Personally, I think UKMT is the easiest competition among them because the amount of knowledge that UKMT will test is very limited and UKMT won’t give questions in a very deep level except the last few questions. Also, the requirement of UKMT for people to get a reward is very low. I remember that, if people can answer the first 20 questions correctly, they can get the gold reward even without answering the last few questions which are relatively more difficult correctly. It were  my school teachers who let me attend UKMT. At that time, I was relatively free so I agreed at once and, later, I just did a few past papers to get the idea of the style of UKMT papers. Last, I got the gold reward. To be honest, if people really pay attention to this competition, it is really easy for people to get a reward. Though UKMT is not so valuable, I think it is still worth attending because UKMT is a formal international competition. Attending UKMT can make people build an idea of how to do and how to prepare for a competition, which is a very important skill in further study. In the future, there will be many distinct competitions. If people have had similar experience before such as attending UKMT, people will be less nervous and they will know what they should do to prepare for competitions to get a better performance. That is why I say attending UKMT is useful. </p>
-<p>Then, I want to talk about AMC. Personally, I reckon that AMC is the most difficult competition among these three competitions. This is for three reasons. One reason is that AMC tests a lot of knowledge points. I even have not learnt some of them so this will make AMC harder than other two competitions because people can hardly work out new knowledge points without the explanation of teachers. Also, the questions given by AMC are a bit difficult. AMC won’t test knowledge points directly. People have to find what the question really wants to test before people can work out the question or people will not know how to start solving it. The third difficulty is that the time given by AMC for people to solve problems is very limited. Unlike UKMT, which gives people 2 hours to solve problems, AMC only provides 1 hour and 15 minutes with more difficult questions. As a result, when I did AMC, I had to make choices because I could not work out all questions in such a limited time. For these three reasons, AMC is relatively more difficult. In fact, I did not do very well in AMC because AMC was in winter holiday when I played so much that I did not prepare for AMC well. Moreover, for competitions like AMC, a ready preparation is really important. People had better go over what AMC might test in advance or if people meet some new knowledge points in AMC, they can do nothing but give it up. However, generally speaking, AMC is a really valuable competition. AMC can widen our horizons in the area of Maths if people analyze the questions in AMC carefully because they can learn know new knowledge (in the period of preparation). Also, AMC can develop people’s ability in solving difficult problems which is really useful. For example, when doing AMC, people should do what they can do first leaving difficult problems and, if they have extra time, they can go back to solve difficult ones as people have to make sure that they can get as many points as possible. Just as I say, not all competitions are as easy as UKMT so this kind of skill is useful in future study.</p>
-<p>Then, I will talk about Euclid Maths Competition. In fact, its degree of difficulty is just between AMC and UKMT. The knowledge that Euclid Maths Competition tests is all what we have learnt. However, its last three problems are a bit difficult. Also, Euclid Maths Competition will provide 2.5 hours for people, though people mat not solve all questions in such a long time because I have to admit that the last three questions are very difficult. Nevertheless, such amount of time is definitely enough for people to do the first seven questions, which means, if they work hard, they can at least get a silver reward (Euclid Maths Competition has ten questions with ten points each. 70 points is silver level. 90 is gold levevl). When I did my Euclid Maths Competition, I just finished the first nine questions but that was OK. From my perspective, I recommend people to attend Euclid Maths Competition because it does not need so much preparation and it is a good way to improve Maths thinking.</p>
-<p>Last, I will make a conclusion about these three competitions. In terms of degree of difficulty, AMC&gt; Euclid Maths Competition&gt;UKMT. In terms of time given, Euclid Maths Competition&gt;UKMT&gt;AMC. In terms of the range of knowledge tested, AMC&gt; Euclid Maths Competition=UKMT. So, we can analyze these competitions more clearly after listing their properties. As shown, UKMT is in the base. It is not difficult so it can be used to get familiar with normal Maths competitions. Euclid Maths Competition is more difficult than UKMT so people can be improved in solving Maths problems by doing it. Then, AMC is suitable for people who are willing to take challenges and want to study deeper in Maths. However, they have one thing in common, namely they can all show people’s interest in studying Maths.</p>
-<p>Overall, no matter what kind of competition it is, I believe that each competition has its own </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/17/My-thoughts-about-three-different-Maths-competitions/" data-id="ckosl0hj40000fow34nrqhqt2" data-title="My thoughts about three different Maths competitions" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-实验报告" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/17/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" class="article-date">
-  <time class="dt-published" datetime="2021-05-17T12:06:33.000Z" itemprop="datePublished">2021-05-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/17/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">实验报告</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>探究不同因素对于保险丝熔断时间的影响</p>
-<p>顾恩诚</p>
-<p>(金陵中学，南京)</p>
-<p> 2021 年 4 月 2 日</p>
-<p>摘要：本实验的目的为探究各种因素对于保险丝熔断时间的影响（由于器材限制，本实验主要以电流为主要研究因素）。在此试验中我运用了控制变量的方法对各个因素进行了逐一分析，而且对于同一组实验，我进行了多次实验来降低实验误差及偶然性带来的影响。此外在本试验中测量方法及分析方法都借助了计算机的帮助。在测量数据中我运用了nanoC来记录熔断所需的时间。在数据分析中，我运用Python中的回归方程来模拟出函数来表示各个因素对与熔断所需时间的影响。结果十分明显，以电流为例，在定性的角度上，熔断时间随着电流的增大而减小。以定量的角度来讲，整体趋势为T=a<em>e（b</em>X）+c（a，b，c为常数。E为自然常数。））。此表达式中的常数会随保险丝的规格改变而改变。</p>
-<p>关键词：Arduino测量数据，Python分析数据，回归方程</p>
-<p>\1.   实验目的与要求</p>
-<p>从理论角度来分析保险丝熔断所需时间，可能需要考虑散热、受力等因素，而我们是从实验的角度来探索影响保险丝熔断所需时间的因素。物理是基于实验的学科。我想借本次实验来观察与分析理论和实验在物理上的差别。并且在本次实验我不想再循规蹈矩用常规的仪器来测量数据，在此实验中我将会把测量数据的部分用电脑代替来将实验更智能化，更精确化。而且在数据的处理上，我会用Python进行操作，把数据以一个可视化的形式呈现出来，以此来建立物理和计算机的联系。</p>
-<p>\2.   实验原理与实验初步方案</p>
-<p>电流是有热效应的。Q = (I**2) * R * T  。所以当电路中有电流的时候，电路的温度会升高。且保险丝通常是熔点很低的材料，所以当电路中电流过大的时候，过高的温度会融化保险丝导致电路的断开来保护电路。通过题目我们发现需要控制变量来探究各个参数是如何影响保险丝“熔断”所需时间。 猜想有什么参数会影响保险丝的熔断？ 1. 保险丝的粗细，长度，材质。 2. 保险丝周围的温度。 3. 保险丝周围的介质。 4. 对单个保险丝的作用力。 为了完成这个实验我们现在的步骤如图1。<a target="_blank" rel="noopener" href="https://imgtu.com/i/gRxzGQ"><img src="https://z3.ax1x.com/2021/05/17/gRxzGQ.jpg" alt="gRxzGQ.jpg"></a></p>
-<p>图1 实验步骤</p>
-<p>\3.   实验仪器设备的设计制作与调试</p>
-<p>首先，我先设计一个方案来测量数据，如图2。<a target="_blank" rel="noopener" href="https://imgtu.com/i/gRzpxs"><img src="https://z3.ax1x.com/2021/05/17/gRzpxs.jpg" alt="gRzpxs.jpg"></a></p>
-<p>图2 测量仪器方案</p>
-<p>此电路分成两个部分，一部分为测量电路，一部分为保险丝电路。测量电路会测量保险丝电路中的电流大小，与判断保险丝电路中是否有电流。通过程序的编写nanoC还可以测量断开保险丝所需的时间。并且只有当开关模块和电源同时打开时，保险丝电路中才会有电流。以下为实际效果：</p>
-<p>图3 实际的器材</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gRzS2j"><img src="https://z3.ax1x.com/2021/05/17/gRzS2j.jpg" alt="gRzS2j.jpg"></a></p>
-<p>\4.   实验步骤与实验数据记录</p>
-<p>①  搭建设备</p>
-<p>②  编写程序并输入nanoC</p>
-<p>③  打开电源（此时保险丝电路无电流）</p>
-<p>④  打开开关模块（开始熔断）</p>
-<p>⑤  观察现象</p>
-<p>⑥  当保险丝熔断时记录数据</p>
-<p>⑦  重复实验减小误差</p>
-<p>⑧  改变变量重复实验</p>
-<p>—程序：</p>
-<p> 第一步先定义引脚，第二步设置基础的设定，第三步编写测量熔断时间的部分，第四步编写测量电流的部分。</p>
-<p>#include &lt;Wire.h&gt;</p>
-<p>#include &lt;Adafruit_GFX.h&gt;</p>
-<p>#include &lt;Adafruit_SSD1306.h&gt;</p>
-<p>#define OLED_RESET 4   <em>//</em> <em>重置<strong>OLED</strong>屏幕的引脚（可不接）</em></p>
-<p>#define PIN_Button 12   <em>//</em> <em>按键的引脚</em></p>
-<p>#define PIN_FuseEnable 11 <em>//</em> <em>控制保险丝通电的引脚</em></p>
-<p>#define PIN_FuseDetect A2 <em>//</em> <em>检测保险丝通断的引脚</em></p>
-<p>#define PIN_ReadI A3   <em>//</em> <em>从电流检测模块读电压值的引脚</em></p>
-<p>Adafruit_SSD1306 display(128, 64, &amp;Wire, OLED_RESET); <em>//<strong>屏幕的初始化设置（屏幕的</strong>SDA<strong>接</strong>A4<strong>，</strong>SCL<strong>接</strong>A5**）</em></p>
-<p><strong>void</strong> setup()</p>
-<p>{</p>
-<p>  pinMode(LED_BUILTIN, OUTPUT);   <em>//</em> <em>设置内置<strong>LED</strong>的引脚为输出模式</em></p>
-<p>  pinMode(PIN_FuseEnable, OUTPUT);  <em>//</em> <em>设置<strong>PIN_FuseEnable</strong>引脚为输出模式</em></p>
-<p>  pinMode(PIN_Button, INPUT_PULLUP); <em>//</em> <em>设置按键引脚为输入模式，并上拉</em></p>
-<p>  display.begin(SSD1306_SWITCHCAPVCC, 0x3C); <em>//</em> <em>初始化地址为<strong>0x3C</strong>的<strong>SSD1306</strong>屏幕</em></p>
-<p>  display.setTextColor(WHITE);        <em>//</em> <em>开像素点发光</em></p>
-<p>  display.clearDisplay();          <em>//</em> <em>清屏</em></p>
-<p>  display.display(); <em>//</em> <em>让屏幕显示刚刚设置的内容</em></p>
-<p>  display.setTextSize(2);    <em>//</em> <em>设置字体大小</em></p>
-<p>  display.setCursor(0, 0);   <em>//</em> <em>设置游标位置</em></p>
-<p>  display.println(“ [READY] “); <em>//</em> <em>设置显示内容，并换行</em></p>
-<p>  display.println(“Press RED”); <em>//</em> <em>设置显示内容，并换行</em></p>
-<p>  display.println(“to start.”); <em>//</em> <em>设置显示内容，并换行</em></p>
-<p>  display.display();      <em>//</em> <em>让屏幕显示刚刚设置的内容</em></p>
-<p>}</p>
-<p><strong>void</strong> loop()</p>
-<p>{</p>
-<p>  <strong>long</strong> time_start, time_finish;</p>
-<p>  <strong>long</strong> lastTime;</p>
-<p>  <strong>long</strong> lastValue1 = -1;</p>
-<p>  <strong>long</strong> lastValue2 = -1;</p>
-<p>  while (digitalRead(PIN_Button) == HIGH) <em>//</em> <em>不按按键就一直呆在这个死循环里</em></p>
-<p>​    ;</p>
-<p>  digitalWrite(LED_BUILTIN, HIGH);  <em>//</em> <em>点亮<strong>LED</strong>灯</em></p>
-<p>  digitalWrite(PIN_FuseEnable, HIGH); <em>//</em> <em>开启开关模块</em></p>
-<p>  time_start = millis();</p>
-<p>  lastTime = millis();</p>
-<p>  while (1)</p>
-<p>  {</p>
-<p>​    <strong>long</strong> temp_val = 0;</p>
-<p>​    for (<strong>int</strong> i = 0; i &lt; 10; i++) <em>//</em> <em>均值滤波</em></p>
-<p>​    {</p>
-<p>​      temp_val += 0.1 * analogRead(PIN_ReadI);</p>
-<p>​      delay(5);</p>
-<p>​    }</p>
-<p>​    <strong>long</strong> value_I = (temp_val * 4.888 - 2500) / 0.185; <em>//</em> <em>从电流检测模块<strong>OUT</strong>端口以</em> <em>185mV/A</em> <em>的换算关系算来的电流值**(mA)</em></p>
-<p>​    display.clearDisplay();</p>
-<p>​    display.setCursor(0, 0);</p>
-<p>​    <strong>char</strong> temp[30];</p>
-<p>​    sprintf(temp, “I= %ld”, value_I);</p>
-<p>​    display.println(temp);</p>
-<p>​    display.println(“   (mA)”);</p>
-<p>​    <em>// sprintf(temp, “%d”, analogRead(PIN_FuseDetect));</em></p>
-<p>​    <em>// display.println(temp);</em></p>
-<p>​    sprintf(temp, “T= %ld”, millis() - time_start);</p>
-<p>​    display.println(temp);</p>
-<p>​    display.println(“   (ms)”);</p>
-<p>​    display.display();</p>
-<p>​    if ((millis() - lastTime) &gt;= 200) <em>//</em> <em>每<strong>200ms</strong>刷新一下两个**lastValue</em></p>
-<p>​    {</p>
-<p>​      lastTime = millis();</p>
-<p>​      lastValue2 = lastValue1;</p>
-<p>​      lastValue1 = value_I;</p>
-<p>​    }</p>
-<p>​    if (analogRead(PIN_FuseDetect) &gt;= 1000) <em>//</em> <em>检测通断</em></p>
-<p>​    {</p>
-<p>​      time_finish = millis() - time_start;</p>
-<p>​      <strong>char</strong> temp[30];</p>
-<p>​      if ((millis() - lastTime) &gt;= 100) <em>//</em> <em>这一套</em> <em>if-else</em> <em>使得屏幕上显示的电流值是熔断的<strong>0.1~0.3</strong>秒前的值</em></p>
-<p>​      {</p>
-<p>​        sprintf(temp, “I= %ld”, lastValue1);</p>
-<p>​      }</p>
-<p>​      else</p>
-<p>​      {</p>
-<p>​        sprintf(temp, “I= %ld”, lastValue2);</p>
-<p>​      }</p>
-<p>​      display.clearDisplay();</p>
-<p>​      display.setCursor(0, 0);</p>
-<p>​      display.println(temp);</p>
-<p>​      display.println(“   (mA)”);</p>
-<p>​      sprintf(temp, “T= %ld”, time_finish);</p>
-<p>​      display.println(temp);</p>
-<p>​      display.println(“   (ms)”);</p>
-<p>​      display.display();</p>
-<p>​      digitalWrite(LED_BUILTIN, LOW);  <em>//</em> <em>关闭<strong>LED</strong>灯</em></p>
-<p>​      digitalWrite(PIN_FuseEnable, LOW); <em>//</em> <em>关闭开关模块</em></p>
-<p>​      while (1)             <em>//</em> <em>死循环</em></p>
-<p>​        ;</p>
-<p>​    }</p>
-<p>  }</p>
-<p>}</p>
-<p>由于实验材料有限，本次的主要实验只能探究电流和保险丝规格的对熔断时间的影响（使用的是保险丝管）。数据如表1。<del>以下为数据：</del></p>
-<p>表1 测量数据</p>
-<table>
-<thead>
-<tr>
-<th>标称电流为0.1A的保险丝</th>
-<th>标称电流为0.2A的保险丝</th>
-<th>标称电流为1.0A的保险丝</th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>电流 I/A</td>
-<td>熔断耗时 T/ms</td>
-<td>电流 I/A</td>
-<td>熔断耗时 T/ms</td>
-<td>电流 I/A</td>
-<td>熔断耗时 T/ms</td>
-</tr>
-<tr>
-<td>0.70</td>
-<td>&gt;1000000</td>
-<td>0.90</td>
-<td>&gt;60000</td>
-<td>1.50</td>
-<td>&gt;60000</td>
-</tr>
-<tr>
-<td>0.75</td>
-<td>395961</td>
-<td>0.95</td>
-<td>21138</td>
-<td>1.60</td>
-<td>&gt;60000</td>
-</tr>
-<tr>
-<td>0.80</td>
-<td>166134</td>
-<td>1.00</td>
-<td>4252</td>
-<td>1.70</td>
-<td>&gt;60000</td>
-</tr>
-<tr>
-<td>0.85</td>
-<td>858892</td>
-<td>1.05</td>
-<td>1063</td>
-<td>1.80</td>
-<td>&gt;60000</td>
-</tr>
-<tr>
-<td>0.90</td>
-<td>332079</td>
-<td>1.05</td>
-<td>1522</td>
-<td>1.90</td>
-<td>&gt;60000</td>
-</tr>
-<tr>
-<td>0.95</td>
-<td>335143</td>
-<td>1.10</td>
-<td>914</td>
-<td>1.95</td>
-<td>49366</td>
-</tr>
-<tr>
-<td>0.97</td>
-<td>232388</td>
-<td>1.15</td>
-<td>763</td>
-<td>2.00</td>
-<td>13189</td>
-</tr>
-<tr>
-<td>0.98</td>
-<td>1122</td>
-<td>1.20</td>
-<td>865</td>
-<td>2.05</td>
-<td>6733</td>
-</tr>
-<tr>
-<td>0.98</td>
-<td>46406</td>
-<td>1.20</td>
-<td>662</td>
-<td>2.10</td>
-<td>1488</td>
-</tr>
-<tr>
-<td>0.98</td>
-<td>63043</td>
-<td>1.25</td>
-<td>609</td>
-<td>2.15</td>
-<td>1442</td>
-</tr>
-<tr>
-<td>0.99</td>
-<td>8611</td>
-<td>1.30</td>
-<td>510</td>
-<td>2.20</td>
-<td>1234</td>
-</tr>
-<tr>
-<td>0.99</td>
-<td>1121</td>
-<td>1.35</td>
-<td>510</td>
-<td>2.25</td>
-<td>1130</td>
-</tr>
-<tr>
-<td>0.99</td>
-<td>4404</td>
-<td>1.35</td>
-<td>457</td>
-<td>2.30</td>
-<td>1077</td>
-</tr>
-<tr>
-<td>1.00</td>
-<td>5942</td>
-<td>1.40</td>
-<td>459</td>
-<td>2.35</td>
-<td>974</td>
-</tr>
-<tr>
-<td>1.00</td>
-<td>1121</td>
-<td>1.40</td>
-<td>460</td>
-<td>2.40</td>
-<td>923</td>
-</tr>
-<tr>
-<td>1.00</td>
-<td>916</td>
-<td>1.45</td>
-<td>408</td>
-<td>2.45</td>
-<td>924</td>
-</tr>
-<tr>
-<td>1.01</td>
-<td>916</td>
-<td>1.50</td>
-<td>458</td>
-<td>2.50</td>
-<td>820</td>
-</tr>
-<tr>
-<td>1.01</td>
-<td>6254</td>
-<td>1.50</td>
-<td>407</td>
-<td>2.55</td>
-<td>819</td>
-</tr>
-<tr>
-<td>1.01</td>
-<td>4917</td>
-<td>1.60</td>
-<td>253</td>
-<td>2.55</td>
-<td>767</td>
-</tr>
-<tr>
-<td>1.02</td>
-<td>916</td>
-<td>1.60</td>
-<td>253</td>
-<td>2.60</td>
-<td>767</td>
-</tr>
-<tr>
-<td>1.02</td>
-<td>962</td>
-<td>1.70</td>
-<td>201</td>
-<td>2.60</td>
-<td>766</td>
-</tr>
-<tr>
-<td>1.02</td>
-<td>963</td>
-<td>1.70</td>
-<td>305</td>
-<td>2.65</td>
-<td>713</td>
-</tr>
-<tr>
-<td>1.03</td>
-<td>860</td>
-<td>1.80</td>
-<td>202</td>
-<td>2.70</td>
-<td>666</td>
-</tr>
-<tr>
-<td>1.03</td>
-<td>860</td>
-<td>1.80</td>
-<td>204</td>
-<td>2.75</td>
-<td>666</td>
-</tr>
-<tr>
-<td>1.03</td>
-<td>5125</td>
-<td>1.90</td>
-<td>203</td>
-<td>2.75</td>
-<td>667</td>
-</tr>
-<tr>
-<td>1.04</td>
-<td>1012</td>
-<td>1.90</td>
-<td>201</td>
-<td>2.80</td>
-<td>614</td>
-</tr>
-<tr>
-<td>1.04</td>
-<td>911</td>
-<td>2.00</td>
-<td>151</td>
-<td>2.80</td>
-<td>616</td>
-</tr>
-<tr>
-<td>1.04</td>
-<td>860</td>
-<td>2.10</td>
-<td>150</td>
-<td>2.85</td>
-<td>614</td>
-</tr>
-<tr>
-<td>1.05</td>
-<td>860</td>
-<td>2.20</td>
-<td>152</td>
-<td>2.85</td>
-<td>616</td>
-</tr>
-<tr>
-<td>1.05</td>
-<td>861</td>
-<td>2.50</td>
-<td>100</td>
-<td>2.90</td>
-<td>563</td>
-</tr>
-<tr>
-<td>1.05</td>
-<td>810</td>
-<td>2.70</td>
-<td>100</td>
-<td>2.95</td>
-<td>563</td>
-</tr>
-<tr>
-<td>1.06</td>
-<td>809</td>
-<td>3.00</td>
-<td>102</td>
-<td>3.00</td>
-<td>511</td>
-</tr>
-<tr>
-<td>1.07</td>
-<td>757</td>
-<td>3.00</td>
-<td>100</td>
-<td>3.00</td>
-<td>564</td>
-</tr>
-<tr>
-<td>1.08</td>
-<td>810</td>
-<td>3.20</td>
-<td>102</td>
-<td>3.05</td>
-<td>511</td>
-</tr>
-<tr>
-<td>1.09</td>
-<td>759</td>
-<td></td>
-<td></td>
-<td>3.05</td>
-<td>512</td>
-</tr>
-<tr>
-<td>1.10</td>
-<td>708</td>
-<td></td>
-<td></td>
-<td>3.10</td>
-<td>512</td>
-</tr>
-<tr>
-<td>1.11</td>
-<td>710</td>
-<td></td>
-<td></td>
-<td>3.10</td>
-<td>512</td>
-</tr>
-<tr>
-<td>1.12</td>
-<td>660</td>
-<td></td>
-<td></td>
-<td>3.15</td>
-<td>512</td>
-</tr>
-<tr>
-<td>1.13</td>
-<td>660</td>
-<td></td>
-<td></td>
-<td>3.15</td>
-<td>513</td>
-</tr>
-<tr>
-<td>1.14</td>
-<td>609</td>
-<td></td>
-<td></td>
-<td>3.20</td>
-<td>460</td>
-</tr>
-<tr>
-<td>1.15</td>
-<td>611</td>
-<td></td>
-<td></td>
-<td>3.20</td>
-<td>461</td>
-</tr>
-<tr>
-<td>1.20</td>
-<td>560</td>
-<td></td>
-<td></td>
-<td>3.20</td>
-<td>461</td>
-</tr>
-<tr>
-<td>1.30</td>
-<td>458</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>1.40</td>
-<td>356</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>1.50</td>
-<td>254</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2.00</td>
-<td>152</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>2.50</td>
-<td>100</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>3.00</td>
-<td>51</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<p>此外，我还用金属丝来充当保险丝做了分实验（简单探究其它的因素），如图4：</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gRzCMn"><img src="https://z3.ax1x.com/2021/05/17/gRzCMn.jpg" alt="gRzCMn.jpg"></a></p>
-<p><strong>图**</strong>4** <strong>金属丝</strong></p>
-<p>在探究长度的影响时，以铝，铜为代表，控制其他变量相同，只分别改变铝，铜的长度。在探究种类的影响时，控制其他因素不变，用铝，铜，钛，钨，镍，钼，镍镉合金进行对比。以下为数据，如表2：</p>
-<table>
-<thead>
-<tr>
-<th>编号</th>
-<th>金属丝材质</th>
-<th>金属丝直径/mm</th>
-<th>长度/mm</th>
-<th>电流/A</th>
-<th>熔断时间/ms</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>铝</td>
-<td>0.10</td>
-<td>30</td>
-<td>2</td>
-<td>13027</td>
-</tr>
-<tr>
-<td>2</td>
-<td>铝</td>
-<td>0.10</td>
-<td>60</td>
-<td>2</td>
-<td>7445</td>
-</tr>
-<tr>
-<td>3</td>
-<td>铝</td>
-<td>0.10</td>
-<td>60</td>
-<td>2</td>
-<td>5208</td>
-</tr>
-<tr>
-<td>4</td>
-<td>铝</td>
-<td>0.10</td>
-<td>90</td>
-<td>2</td>
-<td>1945</td>
-</tr>
-<tr>
-<td>5</td>
-<td>铝</td>
-<td>0.10</td>
-<td>120</td>
-<td>2</td>
-<td>1099</td>
-</tr>
-<tr>
-<td>6</td>
-<td>铝</td>
-<td>0.10</td>
-<td>150</td>
-<td>2</td>
-<td>173</td>
-</tr>
-<tr>
-<td>7</td>
-<td>铜</td>
-<td>0.10</td>
-<td>30</td>
-<td>2</td>
-<td>&gt;60000</td>
-</tr>
-<tr>
-<td>8</td>
-<td>铜</td>
-<td>0.10</td>
-<td>30</td>
-<td>2</td>
-<td>21993</td>
-</tr>
-<tr>
-<td>9</td>
-<td>铜</td>
-<td>0.10</td>
-<td>60</td>
-<td>2</td>
-<td>7981</td>
-</tr>
-<tr>
-<td>10</td>
-<td>铜</td>
-<td>0.10</td>
-<td>90</td>
-<td>2</td>
-<td>6238</td>
-</tr>
-<tr>
-<td>11</td>
-<td>铜</td>
-<td>0.10</td>
-<td>120</td>
-<td>2</td>
-<td>1365</td>
-</tr>
-<tr>
-<td>12</td>
-<td>铜</td>
-<td>0.10</td>
-<td>150</td>
-<td>2</td>
-<td>833</td>
-</tr>
-<tr>
-<td>13</td>
-<td>钛</td>
-<td>0.10</td>
-<td>90</td>
-<td>2</td>
-<td>217</td>
-</tr>
-<tr>
-<td>14</td>
-<td>钨</td>
-<td>0.10</td>
-<td>90</td>
-<td>2</td>
-<td>173</td>
-</tr>
-<tr>
-<td>15</td>
-<td>镍铬合金</td>
-<td>0.10</td>
-<td>90</td>
-<td>2</td>
-<td>173</td>
-</tr>
-<tr>
-<td>16</td>
-<td>钼</td>
-<td>0.10</td>
-<td>90</td>
-<td>2</td>
-<td>261</td>
-</tr>
-<tr>
-<td>17</td>
-<td>镍</td>
-<td>0.10</td>
-<td>90</td>
-<td>2</td>
-<td>86</td>
-</tr>
-</tbody></table>
-<p><strong>表**</strong>2** <strong>测量数据</strong></p>
-<p>**5.**实验中出现的问题及解决方法</p>
-<p>因为电流低，热量产生和散失的速度形成了个平衡，不足以使保险丝熔断。，导致在低电流的情况下所需熔断时间相差较大。为了减小误差，在分析数据时，我干脆就舍弃时间太大的数据。</p>
-<p>而且在搭建电路的时候，我发现测量电流的设备出了些问题（测出的电流与实际不符）。检查之后发现是没有仔细阅读说明造成的一般这种设备是1000mA对1000mV，但这次的是1000mA对185mV，所以要修改一下程序即可（1000mA对1000mV的意思为当设备读到1000mA的电流时，它会显示出1000mV的电压。此设备虽然显示的是电压，但是通过计算可以将它显示的电压换算为电流）。但之后发现用这个设备测电流显得多余，不如直接在稳压直流电源上读电流，这样更准确。另一个问题是在数据分析上，用多项式模型来回归方程总是有较大的误差，但之后我将基本的式子修改了一下，会与实验的结果更吻合。第一组用  来还原的，如图5：  </p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gRxxPg"><img src="https://z3.ax1x.com/2021/05/17/gRxxPg.png" alt="gRxxPg.png"></a></p>
-<p>图5 第一次数据分析</p>
-<p>第二组用  来还原的，如图6：</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/gRzPrq"><img src="https://z3.ax1x.com/2021/05/17/gRzPrq.png" alt="gRzPrq.png"></a></p>
-<p>图6 第二次数据分析</p>
-<p>\6. 实验数据处理与误差分析</p>
-<p>收集数据之后我用Python画图来分析数据，同时用回归方程的方法来大概模拟出一个式子。整个代码的思路为，先将数据输入，然后让电脑将数据画成图表（类似于图5），再让电脑算出一个与此图最为匹配的函数，并将这个函数输出。误差主要还是集中在各保险丝的质量不同，舍去了低电流的数据后，剩余的数据的趋势还是很明显的（随着电流的增大，熔断时间越短，呈T=a<em>e（b</em>X）+c（a，b，c为常数。E为自然常数。））。</p>
-<p>\7. 本实验的限制及思考</p>
-<p>在实验中，我发现当仪器显示金属丝已烧断时，有好几次看不到烧断的痕迹，并且将它重新接回电路中时，电路中依然有电流，探究这是怎么回事。初步判断：当金属丝的温度达到它的熔点时，其实它就会烧断。但是，它的熔断是由于电流的热效应导致的。当它熔断时，电路中没有了电流，意味着金属丝的温度会下降，所以熔断的部分在断开很短的时间后又了接上去。但这都是初步的猜想，至于事实如何，还需要进一步研究。</p>
-<p>还有一个思考题，探究保险丝摆放的方向对于熔断时间的影响。重力可以看作是作用在保险丝的中间的，所以将保险丝横着放会不会比竖着放熔断的更快？由于器材的限制，这个问题目前无法做实验解答。</p>
-<p>另一个思考题为：探究保险丝的熔断位置。正如之前所讲熔断是由于电流的热效应，Q = (I**2) * R * T，导致的。并且在串联电路中整个保险丝电流的大小一样的。时间也是一样的。</p>
-<p>这意味着，在保险丝中电阻大的地方会先熔断。所以是最细的地方先熔断，因为越细的地方电阻越大。但是，具体实验也无法考证，因为目前的设备无法测量保险丝各个地方的直径大小。</p>
-<p>8.实验小结</p>
-<p>本实验受器材的限制太大，只能主要探究电流对熔断时间的影响。结果十分明显，以电流为例，在定性的角度上，熔断时间随着电流的增大而减小。以定量的角度来讲，整体趋势为T=a<em>e（b</em>X）+c（a，b，c为常数。E为自然常数。））。此表达式中的常数会随保险丝的规格改变而改变。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/17/%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" data-id="ckoskwrtj0000oww3fxnq7gtt" data-title="实验报告" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-coding-activity" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/05/17/coding-activity/" class="article-date">
-  <time class="dt-published" datetime="2021-05-17T11:58:48.000Z" itemprop="datePublished">2021-05-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/05/17/coding-activity/">coding activity</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>​                                          A report on coding activity (Based on Python)</p>
-<p>Introduction:</p>
-<p>One week ago, I took part in a coding activity about the difference among several foreign languages. This report aims to highlight what happened, what I learned, and how I felt.</p>
-<p>Summary:</p>
-<p>In this topic, it was hard to do research based on the whole languages so we just chose the words that represented the number 0 to 9 in each language. Our supervisor offered us three ways to analyze it. The first and simplest way was to use the first character of each word to identify whether they were similar. With words that had the same meaning in different languages, if their first characters were identified, we suggested these words were similar. Otherwise, we suggested they were different. Based on this idea, we could choose two languages and compare the words that meant from 0 to 9 one by one. After comparing the words, we would give these two languages points that were the same as the number of pairs of words which had the same first character. To compare the similarity among different languages, we could suggest that the two languages with more points were more similar than others. The other two methods were much more difficult because they analyzed data based on Maths such as using vectors.</p>
-<p>Finding:</p>
-<p>As I had just finished my Python lessons, this task was not so easy for me. For example, I could not remember all the formats in Python and I sometimes mistook some formats in VB for those in Python. But that was OK because Mr.Chen could offer me some help if necessary. From my perspective, this coding activity not only aimed to practice using Python but also contributed to how write codes. For example, when I met some problems in using Python. We did not need to ask teachers for help immediately, instead we could go to the Internet as there is plenty of information about Python on the Internet and our ability of self-study could be improved in this way. Moreover, I learned that getting results was not the real aim of this activity. During the activity, I thought that I just need to calculate the results by myself and then, printed them using Python. But Mr.Chen did not agree with me. He said that using Python was to make data analyze more convenient. If I got results in this way, this activity would lose its value and this could not deal with a large amount of information.</p>
-<p>Conclusion:</p>
-<p>  From the activity, I found that there were still a lot for me to learn in Python. I hope that I can attend it again.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/17/coding-activity/" data-id="ckosk6g240000ukw3bzyebi19" data-title="coding activity" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-reading-report" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/01/25/reading-report/" class="article-date">
-  <time class="dt-published" datetime="2021-01-25T07:25:11.000Z" itemprop="datePublished">2021-01-25</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/01/25/reading-report/">reading report</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Reading report-科技想要什么</p>
-<p>介绍</p>
-<p>作者：凯文凯利（Kevin Kelly，1952～，人们经常亲昵地称他为 KK），《连线》（Wired）杂志创始主编。在创办《连线》之前，是《全球概览》杂志（The Whole Earth Catalog，乔布斯最喜欢的杂志）的编辑和出版人。1984年，KK发起了第一届黑客大会（Hackers Conference）。他的文章还出现在《纽约时报》、《经济学人》、《时代》、《科学》等重量级媒体和杂志上。凯文·凯利被看作是“网络文化”（Cyberculture）的发言人和观察者，也有人称之为“游侠”（maverick）</p>
-<p>书籍：这是一部关于科技的巅峰之作，必定会成为现代思想体系中的一座里程碑。在《科技想要什么》一书中，<a target="_blank" rel="noopener" href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=10356918&ss_c=ssc.citiao.link">凯文</a><a target="_blank" rel="noopener" href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=10356918&ss_c=ssc.citiao.link">·</a><a target="_blank" rel="noopener" href="https://baike.sogou.com/lemma/ShowInnerLink.htm?lemmaId=10356918&ss_c=ssc.citiao.link">凯利</a>向我们介绍了一种全新的科技观。他认为，作为整体，科技不是由线路和金属构成的一团乱麻，而是有生命力的自然形成的系统，它的起源完全可以回溯到生命的初始时期。正如生物进化呈现出无意识的趋势，科技也是如此。通过追踪这些长期趋势，我们可以对“科技想要什么”有所理解。此书为KK三部曲之二（1.观察-《失控》2.反思-《科技想要什么》3.展望-《必然》）</p>
-<p>简介</p>
-<p>\1. 大哉问<br> 2.人类的生活，来自人类的文明<br> 3.第七界的历史<br> 4.外熵崛起<br> 5.大发展</p>
-<p>大哉问<br> 1.科技的本质（思想和信息）<br> 2.科技名词的来源<br> 3.科技的自主性<br> 4.科技想要的东西<br> 6.以自己的方式，让科技以最小的代价造福人类</p>
-<p>人类的生活，来自人类的文明<br> 1.工具，人脑<br> 2.基因，思维巨变<br> 3.语言（后代）<br> 4.科技发明的影响</p>
-<p>第七界的历史（原核生物界、原生生物界、真菌界、植物界、动物界、病毒界，科技）<br> 1.类比生物体（思想的生物体）<br> 2.进化<br> 3.语言<br> 4.科技永垂不朽</p>
-<p>外熵崛起（熵是人们定义的一个热力学参数，作为体系混乱度的量度，用符号S表示。熵既是热力学概念，又在信息论方面得到应用。热力学方面常见的定义是克劳修斯从宏观角度定义的克劳修斯熵和玻尔兹曼从微观角度定义的波尔兹曼熵。此外还有香农从信息论角度提出的信息熵，亦被称为香农熵）（有多乱）（热能）<br> 1.宇宙与熵<br> 2.科技的活跃度</p>
-<p>大发展<br> 1.只要正面发展比负面发展多（甚至0.1%），人类都会进步<br> 2.举例<br> 3.看到进步，看到危害</p>
-<p>感想</p>
-<p>首先，我想表达一个和作者不一致的观点。在文章最初，作者讲述道，身边的朋友一个个都被科技产品所限制。作者为了保持自我，就将五花八门的科技产品拒之门外，同时作者也十分佩服不受科技所拘束的部落。我认为不然。之所以大家会被科技所拘束，正是因为科技的强大。因为科技给人类带来了已经不能用创世纪这个词来形容的影响。我想这点应该没有人会反驳我。当然我也没有认为被科技所支配是理所应当的是，我只是想将这个问题拆解开来。人类被科技支配并不是科技产品的错，而是人们没有认识到如何完美的平衡科技罢了。与其拒绝科技产品，还不如学会如何反过来平衡它，支配它。当然，这个问题与本书无直接关联。本书讨论的是科技的本质，并不是如何使用科技。但，我一直坚信—存在即合理。第二，我想讲的是，我对文中所提到的语言对科技的影响是很有体会的。无可否认，语言，它本身就是一种科技，而且它极大的推动了其他科技的发展。我认为，语言之所以有这么强大的作用，是因为它可以将零碎的信息一个个联系为一个整体。但语言本身不具备这种能力，这需要人作为媒介。说白了，就是，当有了语言之后，人们就可以交流，信息就可以传递，在这个过程中，信息就会被联系起来，思想就会有碰撞。这一方面大大节约了科技进步所需的时间，因为只要有人提出这个想法，通过语言，会有更多的人参与思考。打个比方，几个人思考一个题目总比一个人思考题目来的快，因为大家的想法是不一样的，在语言的支持下，大家可以取长补短，从何一步步靠近答案，而一个人就只能依靠自己的想法。再直白一些就是语言可以让我们站在巨人的肩膀上，不是每个人都要想到这个点，我们完全可以在语言的加持下，以别人的想法为基础向前发展。就像我们现在在学习一样，学习学习，我们大部分都是在学，在聆听他人的故事，如果要让我们自己想出书上的所有知识点，这是绝对不可能的，这些毕竟几代人的心血，但为什么我们可以快速掌握他们，甚至创新，因为有语言。第三，这本书让我感觉最妙的是，作者将科技比作是一种生命，甚至直接拿出一章将科技与生命做对比。其实这一开始让我有些奇怪，为什么作者会把一个与生命毫不相关的概念与生命相提并论。但仔细回味过后，最很有道理，因为科技的发展实在太像生命的进化了。生命会优胜劣汰，科技何尝不是，科技一直在创新，旧的科技就会被新的科技所淘汰。生命的发展是从简单到复杂的，科技也是这样。以写字为例，当人类发明文字时，文字总是要被记录的，从最简单的刻字，到最复杂的打字，一步步见证了科技的进步。此外，作者也讲了一个科技与生命最大的区别，那就是科技是永垂不朽的。确实，同类科技的优胜劣汰不谈，很少有一种科技会彻底消失，这与生命不同，种族的灭绝是很常见的，甚至是无法避免的。至于原因，作者说因为科技是信息和思想的载体，所以不会轻易消失，即使消失也可以复活。我认为，还是那就话，存在即合理。任何科技都有它存在的意义，要不然它就不会被发明。但生命不同，生命的诞生有一定巧合，而没有意义的巧合就会被淘汰。我最后想讲的是科技确实是一把双刃剑，而且这把双刃剑很有意思，有意思在这把双刃剑会自己平衡自己。说明白一点，有一个人说过，要用魔法打败魔法，这里要用科技打败科技。举两个例子。第一个，当农具这个科技产品被发明时，生产力大大提升，这是好处，无可置疑。但随后，一个政治上的科技产品随之而出，它是奴隶制，这是人类史上的一个大失败。它是怎么被解决的呢，因为生产力和政治在随后又进一步发展，都有进一步的科技产品横空出世，于是科技解决了科技，奴隶制不再适应新的社会，于是他瓦解了。另一个例子是工业革命，工业革命促进了生产力，毫无疑问，这是好处。之后呢，由于生产力的发展，各国对能源劳动力的需求增大，殖民制度，三角贸易，国家冲突，相应而来。再之后，一些叫做教育，法律的科技产品又解决了他们。从这两个例子，我们可以发现，科技的好坏总是一环套一环的，就像太极一样，阴极之处必有阳，阳极之处必有阴。但，科技的循环一直遵循一个原则，只要好的影响比坏的影响多百分之零点零一，那么社会就会进步。</p>
-<p>（本文查询资料:&lt;&lt;科技想要什么&gt;&gt;<br> 百度，谷歌，QQ导航</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/01/25/reading-report/" data-id="ckkc8yzim0000osw3hqt46fun" data-title="reading report" class="article-share-link">Share</a>
-      
-      
-      
     </footer>
   </div>
   
@@ -1290,23 +629,23 @@
       <ul>
         
           <li>
-            <a href="/2022/04/04/BCI-Brain-Computer-Interface/">BCI(Brain-Computer Interface)</a>
+            <a href="/2022/04/04/Design-a-game-using-Python-with-Pygame-1/">Design a game using Python with Pygame - 1</a>
           </li>
         
           <li>
-            <a href="/2021/12/05/Introduction-of-window-program/">Introduction of window program</a>
+            <a href="/2022/04/04/The-improvement-of-day-one-of-multimeter-project/">The improvement of &lt;day one of multimeter project&gt;</a>
           </li>
         
           <li>
-            <a href="/2021/10/24/Python-Linear-Regression-of-price-of-second-hand-car/">Python--Linear Regression of price of second-hand car</a>
+            <a href="/2022/04/04/Project-about-multimeter-day-one/">Project about multimeter day one</a>
           </li>
         
           <li>
-            <a href="/2021/10/07/Arduino-1-remote-controlled-car/">Arduino 1 -- remote-controlled car</a>
+            <a href="/2022/04/04/Certificate-of-BPHO/">Certificate of BPHO</a>
           </li>
         
           <li>
-            <a href="/2021/10/07/Critical-thinking-and-writing/">Critical thinking and writing</a>
+            <a href="/2022/04/04/Java-practice-two/">Java practice two</a>
           </li>
         
       </ul>

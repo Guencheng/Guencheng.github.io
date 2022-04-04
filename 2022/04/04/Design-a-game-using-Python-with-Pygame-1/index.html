@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Design a game using Python with Pygame - 1 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Using Python to design a game A few days ago, I found a teaching video about how to design a game using python in bilibili. I haven’t tried to do this so I decide to take a look. This game is called ‘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Design a game using Python with Pygame - 1">
+<meta property="og:url" content="http://example.com/2022/04/04/Design-a-game-using-Python-with-Pygame-1/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Using Python to design a game A few days ago, I found a teaching video about how to design a game using python in bilibili. I haven’t tried to do this so I decide to take a look. This game is called ‘">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/7c166ed946022bd9.jpg">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/7c166ed946022bd9.jpg">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/5ce1d3d12a5035b1.jpg">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/d73d1f0af1bffb47.jpg">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/c321e1c3a485b52a.jpg">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/0b7ca00e574f6bf5.jpg">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/66227ce6bb85104e.jpg">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/64ff6925bb8336df.jpg">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/b0753627a123329d.jpg">
+<meta property="og:image" content="https://s3.bmp.ovh/imgs/2022/04/04/8c3ee9854f9fc5c6.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/04/04/qHIeNq.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/04/04/qHIuCV.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/04/04/qHIK3T.jpg">
+<meta property="og:image" content="https://s1.ax1x.com/2022/04/04/qHI3DJ.jpg">
+<meta property="article:published_time" content="2022-04-04T00:46:00.000Z">
+<meta property="article:modified_time" content="2022-04-04T01:00:36.538Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s3.bmp.ovh/imgs/2022/04/04/7c166ed946022bd9.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Design-a-game-using-Python-with-Pygame-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/04/Design-a-game-using-Python-with-Pygame-1/" class="article-date">
+  <time class="dt-published" datetime="2022-04-04T00:46:00.000Z" itemprop="datePublished">2022-04-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Design a game using Python with Pygame - 1
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Using Python to design a game</p>
+<p>A few days ago, I found a teaching video about how to design a game using python in bilibili. I haven’t tried to do this so I decide to take a look.</p>
+<p>This game is called ‘Plane fighting’. As the name suggests, in this game, there are two planes. One is enemy and one is me. Enemy is controlled by computer and our plane is controlled by ourselves. Both planes will shoot bullets. If we are hit, we will lose. If enemy is hit, we will get a point and then it will appear again util we lose. Because this code is a bit long and complex, I would explain step by step, I just give a general explanation of what I did. Also, I want to mention the whole game is designed using a library in Python called Pygame.</p>
+<p>Step1: We should define a screen using pygame and all instructions we did will base on the screen. It is quite easy to do it – getting a picture used as screen then follow the instruction of pygame to display it.</p>
+<p>Step 2: We should define a class called player. Inside the class, we need to concern two problems. One is to display the player. Second is how to control it. To solve the first question, we need to get a picture to represent the player and display it using functions contained in pygame. The same principle is applied to how to control it. There is a function in pygame to detect the information got from the keyboard.</p>
+<p>Step3: We need to define a class called player_bullet. Bullet is different from player as bullet does not to be controlled so it is much easier to de defined.</p>
+<p>Step4: This step is quite similar as the previous two steps. We need to define the classes for enemy and enemy bullets. The difference is that enemy does not to be controlled and it should follows a path.</p>
+<p>Step5: We should write a program to detect whether player or enemy touches bullets. </p>
+<p>Here I will give my codes and the code is quite long so there are many pictures:</p>
+<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/7c166ed946022bd9.jpg"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/7c166ed946022bd9.jpg"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/5ce1d3d12a5035b1.jpg"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/d73d1f0af1bffb47.jpg"> </p>
+<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/c321e1c3a485b52a.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/0b7ca00e574f6bf5.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/66227ce6bb85104e.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/64ff6925bb8336df.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/b0753627a123329d.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/8c3ee9854f9fc5c6.jpg"> </p>
+<p>These are my codes. But I will not only show you my codes because that will be too boring. I will also show the result to you. As we start the program, there is a button. If you click it, the game will start.</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qHIeNq"><img src="https://s1.ax1x.com/2022/04/04/qHIeNq.jpg" alt="qHIeNq.jpg"></a></p>
+<p>Then, the screen is like this:</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qHIuCV"><img src="https://s1.ax1x.com/2022/04/04/qHIuCV.jpg" alt="qHIuCV.jpg"></a></p>
+<p>We can see that there are bullets and player as well as enemy. Also, your score will be displayed at the center of the screen. If you lose, it will look like this.</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qHIK3T"><img src="https://s1.ax1x.com/2022/04/04/qHIK3T.jpg" alt="qHIK3T.jpg"></a></p>
+<p>You can start the game as you click again. Also, if your bullet hit the enemy, you will get scores. As I cannot post a video, I can only show pictures to you.</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qHI3DJ"><img src="https://s1.ax1x.com/2022/04/04/qHI3DJ.jpg" alt="qHI3DJ.jpg"></a></p>
+<p>That is all for this game. It is a quite interesting learning process for me. My coding ability and my understanding about object-oriented coding and process-oriented coding have been improved a lot. In a few days later, I will design a new game as this game is design by others and I just learn how to write from others. Next game will be written by myself and I will say something about my understanding about object-oriented coding and process-oriented coding.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/04/Design-a-game-using-Python-with-Pygame-1/" data-id="cl1k0aoor0002xcw3d6bx4uzn" data-title="Design a game using Python with Pygame - 1" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2022/04/04/The-improvement-of-day-one-of-multimeter-project/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">The improvement of &lt;day one of multimeter project&gt;</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Markdown/" rel="tag">Markdown</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/10/">October 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">September 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">June 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">January 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/04/04/Design-a-game-using-Python-with-Pygame-1/">Design a game using Python with Pygame - 1</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/04/The-improvement-of-day-one-of-multimeter-project/">The improvement of &lt;day one of multimeter project&gt;</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/04/Project-about-multimeter-day-one/">Project about multimeter day one</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/04/Certificate-of-BPHO/">Certificate of BPHO</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/04/Java-practice-two/">Java practice two</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

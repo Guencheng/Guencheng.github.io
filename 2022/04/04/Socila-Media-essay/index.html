@@ -4,13 +4,17 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>Socila Media essay | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="Benefits and drawbacks of social media Contents Introduction. 1 Thesis statement 2 Benefits. 2 Boosting productivity and creativity. 2 Expanding relationship. 2 Expanding horizons. 3 Drawbacks. 3 Caus">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Socila Media essay">
+<meta property="og:url" content="http://example.com/2022/04/04/Socila-Media-essay/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Benefits and drawbacks of social media Contents Introduction. 1 Thesis statement 2 Benefits. 2 Boosting productivity and creativity. 2 Expanding relationship. 2 Expanding horizons. 3 Drawbacks. 3 Caus">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-04T00:16:27.000Z">
+<meta property="article:modified_time" content="2022-04-04T00:16:50.184Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -69,423 +73,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Design-a-game-using-Python-with-Pygame-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/Design-a-game-using-Python-with-Pygame-1/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:46:00.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/Design-a-game-using-Python-with-Pygame-1/">Design a game using Python with Pygame - 1</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Using Python to design a game</p>
-<p>A few days ago, I found a teaching video about how to design a game using python in bilibili. I haven’t tried to do this so I decide to take a look.</p>
-<p>This game is called ‘Plane fighting’. As the name suggests, in this game, there are two planes. One is enemy and one is me. Enemy is controlled by computer and our plane is controlled by ourselves. Both planes will shoot bullets. If we are hit, we will lose. If enemy is hit, we will get a point and then it will appear again util we lose. Because this code is a bit long and complex, I would explain step by step, I just give a general explanation of what I did. Also, I want to mention the whole game is designed using a library in Python called Pygame.</p>
-<p>Step1: We should define a screen using pygame and all instructions we did will base on the screen. It is quite easy to do it – getting a picture used as screen then follow the instruction of pygame to display it.</p>
-<p>Step 2: We should define a class called player. Inside the class, we need to concern two problems. One is to display the player. Second is how to control it. To solve the first question, we need to get a picture to represent the player and display it using functions contained in pygame. The same principle is applied to how to control it. There is a function in pygame to detect the information got from the keyboard.</p>
-<p>Step3: We need to define a class called player_bullet. Bullet is different from player as bullet does not to be controlled so it is much easier to de defined.</p>
-<p>Step4: This step is quite similar as the previous two steps. We need to define the classes for enemy and enemy bullets. The difference is that enemy does not to be controlled and it should follows a path.</p>
-<p>Step5: We should write a program to detect whether player or enemy touches bullets. </p>
-<p>Here I will give my codes and the code is quite long so there are many pictures:</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/7c166ed946022bd9.jpg"> </p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/7c166ed946022bd9.jpg"> </p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/5ce1d3d12a5035b1.jpg"> </p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/d73d1f0af1bffb47.jpg"> </p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/c321e1c3a485b52a.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/0b7ca00e574f6bf5.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/66227ce6bb85104e.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/64ff6925bb8336df.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/b0753627a123329d.jpg">  <img src="https://s3.bmp.ovh/imgs/2022/04/04/8c3ee9854f9fc5c6.jpg"> </p>
-<p>These are my codes. But I will not only show you my codes because that will be too boring. I will also show the result to you. As we start the program, there is a button. If you click it, the game will start.</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qHIeNq"><img src="https://s1.ax1x.com/2022/04/04/qHIeNq.jpg" alt="qHIeNq.jpg"></a></p>
-<p>Then, the screen is like this:</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qHIuCV"><img src="https://s1.ax1x.com/2022/04/04/qHIuCV.jpg" alt="qHIuCV.jpg"></a></p>
-<p>We can see that there are bullets and player as well as enemy. Also, your score will be displayed at the center of the screen. If you lose, it will look like this.</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qHIK3T"><img src="https://s1.ax1x.com/2022/04/04/qHIK3T.jpg" alt="qHIK3T.jpg"></a></p>
-<p>You can start the game as you click again. Also, if your bullet hit the enemy, you will get scores. As I cannot post a video, I can only show pictures to you.</p>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/qHI3DJ"><img src="https://s1.ax1x.com/2022/04/04/qHI3DJ.jpg" alt="qHI3DJ.jpg"></a></p>
-<p>That is all for this game. It is a quite interesting learning process for me. My coding ability and my understanding about object-oriented coding and process-oriented coding have been improved a lot. In a few days later, I will design a new game as this game is design by others and I just learn how to write from others. Next game will be written by myself and I will say something about my understanding about object-oriented coding and process-oriented coding.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/Design-a-game-using-Python-with-Pygame-1/" data-id="cl1k0aoor0002xcw3d6bx4uzn" data-title="Design a game using Python with Pygame - 1" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-The-improvement-of-day-one-of-multimeter-project" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/The-improvement-of-day-one-of-multimeter-project/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:41:42.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/The-improvement-of-day-one-of-multimeter-project/">The improvement of &lt;day one of multimeter project&gt;</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>The improvement of final result of day-1</p>
-<p>I am very sorry that I made a mistake in day one. This is the final graph of day-1.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/9e1b141773baeedb.png"> </p>
-<p>First, I have to mention that there is no huge mistake but I miss a wire that should be connect in the graph. This is the correct graph.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/1b34fd7d0874cc77.jpg"> </p>
-<p>As you can see, I add a purple line in it. Though it is just a wire, if it is missed, the whole part to measure current will not work because this wire connect the whole section to battery. </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/The-improvement-of-day-one-of-multimeter-project/" data-id="cl1k0aoou0007xcw3gw207c15" data-title="The improvement of &lt;day one of multimeter project&gt;" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Project-about-multimeter-day-one" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/Project-about-multimeter-day-one/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:37:15.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/Project-about-multimeter-day-one/">Project about multimeter day one</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Multimeter-day1</p>
-<p>Today, it is the first day for I to design a multimeter by myself. </p>
-<p>Today, I draw the electricity circuit which is used to measure voltage and current in a multimeter.</p>
-<p>First, I need to understand how traditional current meter works.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/77d75ffe7f3b6ba7.jpg"> </p>
-<p>Generally, the basic principle is that when there is current passing through the coil, the coil will experience a force in a magnetic field so that the needle will deflect. And when we design the circuit do not forget that the coil has its resistance.</p>
-<p>In addition, in a normal multimeter, each part has different measurement range. For example, if you want to measure current, there is a level for current of maximum 5A or maximum 10A. Before we start measuring current, we have to choose the right level or it might be out of range or too small to be measured.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/62b2db5f68588dbd.png"> </p>
-<p>This is the final circuit I draw for measuring current. It has different measuring range and do not forget the coil itself has resistance. In the diagraph, the current meter is coil and the source is the current that we want to measure.</p>
-<p>The same principle is applied for measuring voltage. But there is one important thing, if we measure current, resistors must be connected in parallel to divide current. However, in measuring voltage, the have to connect resistors in series to divide voltage. </p>
-<ul>
-<li> <img src="https://s3.bmp.ovh/imgs/2022/04/04/647683ea89a23876.png"> The last thing for today is to combine this two circuit. I choose to use a special switch like this.</li>
-<li> <img src="https://s3.bmp.ovh/imgs/2022/04/04/1a93c0372673c9d7.jpg"> </li>
-<li> <img src="https://s3.bmp.ovh/imgs/2022/04/04/9e1b141773baeedb.png"> </li>
-<li>This is the final circuit. When we want to alternate from measuring current to voltage, we just need to alternate the switch.</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/Project-about-multimeter-day-one/" data-id="cl1k0aoou0006xcw33fddd5hz" data-title="Project about multimeter day one" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Certificate-of-BPHO" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/Certificate-of-BPHO/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:35:10.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/Certificate-of-BPHO/">Certificate of BPHO</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/30453b2b3dfc546d.png"> </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/Certificate-of-BPHO/" data-id="cl1k0aooj0000xcw3e0td02wd" data-title="Certificate of BPHO" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Java-practice-two" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/Java-practice-two/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:25:37.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/Java-practice-two/">Java practice two</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Java practice two</p>
-<p>Question: A person wants to buy some milk tea with 500 dollar and he wants to spend all of the money. How to write a code to find the solution that the man can buy as much milk tea as possible and there is no repetitive taste.</p>
-<p>For this question, the first and the most tuff work for me is to input all data about milk tea which costs me a lot of time. Also, we need to define a new data type that can store the name of milk tea and its price together. Then, we have to order it with descending the price to make it more convenient for us to write code. I would just show part of the code to input data and the code to order milk tea.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/abb47637d8d9d6cf.jpg"> </p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/322e106b54a353c2.jpg"> </p>
-<p>Then, we need to find the solution to select most milk tea. To buy as much milk tea as possible, we need to buy more cheaper milk tea. My idea is to add all milk tea from cheapest to most expensive one by one until it first exceeds or is equal to 500 dollar. If it is 500 dollar, that is wonderful because there will not be any better solution but the real situation is that it exceeds 500 dollar. Then, the most important step comes. We should remove the last milk tea added as it is extra. After removing it, we can find that there is a gap between 500 dollar and our list so we should replace the last milk tea in our current list and we need a milk tea with a price which is equal to the gap plus the price of the milk tea we removed. In this part, a simple loop search is used and then the question is solved. Here is my code:</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/bbd99d31a4f2765c.jpg"> </p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/4791e906dce7b4ff.jpg"> </p>
-<p>And the final answer is 27:</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/a9faaffeb8a7cc1f.jpg"> </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/Java-practice-two/" data-id="cl1k0aoot0004xcw3dadxdano" data-title="Java practice two" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-How-to-use-Python-to-fit-a-curve" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/How-to-use-Python-to-fit-a-curve/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:23:20.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/How-to-use-Python-to-fit-a-curve/">How to use Python to fit a curve</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>How to use python to fit a curve</p>
-<p>This is a very meaningful topic as in engineering we might meet a lot of data and we need a curve to fit the data to get the trend. First, before we start we need a data to be fitted. Because I do not have data that can be used so I have to make up some data. I generate a data about the equation (x-2)(x-8)(x-5)+ 10. To make it more difficult, I will give some percentage error to it.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/b0b5aeddd3b31bd8.jpg"> </p>
-<p>Then, with the data, we can start fit it. First, we need a model and I will use a library called curve_fit to help me. In this library, you just need to input the data and it will return the parameter you needed for you. With the parameter, we can draw a diagraph again to check whether it works. Here, I will the result.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/c38fc0851d37666b.jpg"> </p>
-<p>The blue line is original data and the orange line is the data we fit. It is clearly shown that the library works well. For the blue line, there are some bends as we set percentage error. For the orange line, it is very smooth.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/How-to-use-Python-to-fit-a-curve/" data-id="cl1k0aoos0003xcw3557pcrpl" data-title="How to use Python to fit a curve" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Java-practice-one" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/Java-practice-one/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:19:14.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/Java-practice-one/">Java practice one</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Java practice one</p>
-<p>Question: There are two numbers A and B. How many situations are there so that the number A0B mode AB = 0?</p>
-<p>While this is originally a math problem so there must be tips to do it. However, computer is good at doing repetitive work so writing a code is also a fantastic method to do it. I would explain my thoughts then I would show my code. First, we need to build two arrays – one for A and one for B. Also, we need to define a new data type to store A and B together. In the main program, we should write a nested loop. If A and B satisfy this condition, we store it into the result array. Finally, we just need to output the result.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/29dcbde946e02c88.jpg"> </p>
-<p>The final answer is three:</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/955aabb6dacd01c2.jpg"> </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/Java-practice-one/" data-id="cl1k0aooq0001xcw30l9r0g22" data-title="Java practice one" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Note-of-chip" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/Note-of-chip/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:17:59.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/Note-of-chip/">Note of chip</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>The technology of chip</p>
-<p>\1.    What is chip:</p>
-<p>n Chip = semiconductor + integrated circuit</p>
-<p>n Chip is weak so it is needed to be protected in a shell</p>
-<p>n In chips, there are wires, some are responsible for supplying electricity, some are responsible for input and output.</p>
-<p>n Kind of chips: CPU(logic chip), WiFi(communication chip), memory(memory chip)</p>
-<p>\2.    Why semiconductors:</p>
-<p>n Before semiconductor can be used, people use machine to control electricity physically, but with semiconductor, people use electricity to control electricity.</p>
-<p>n With the application of electricity, people go into the electrical world.</p>
-<p>n Quantum physics contributes to the application of semiconductor which can switch from conductor to isolator or from isolator to conductor.</p>
-<p>n Semiconductor takes people from electrical world to electronic world.</p>
-<p>n Use electricity to control electricity increase the speed of information interaction significantly. </p>
-<p>\3.    Why integrated circuit:</p>
-<p>n Only semiconductor is not enough, many semiconductors work together to realize a function so integrated circuit is needed to connect them.</p>
-<p>n But why integrated circuit, why do not we just melt them together? Many components make a circuit very huge, but with integrated circuit, chip can be made very small and complex.</p>
-<p>n All questions of chips can be broken into 0 and 1.</p>
-<p>n To deal with more information or get a greater speed, we need more semiconductors and, as area is limited, so we need to connect as many semiconductors as possible in a fixed area.</p>
-<p>\4.    Chip connects the world of analogue and the world of digits</p>
-<p>n For example, how do we measure force before? – Newton meter. But now, we have force sensor.</p>
-<p>n Chips can transfer information of real life into digital form and it can be sent quickly, calculating quickly and stored for a long time.</p>
-<p>n So now, nearly all physical quantity can be transferred into digital world. (force, heat, sound, light and electricity)</p>
-<p>\5.    Question :</p>
-<p>What kind of interaction can not be replaced by chips?</p>
-<p>n My perspectives, mental feelings can not replaced by chips. For example, do you want chips to eat food for you and transfer energy back to you? Of course not, because in this case, result just consists of 50%. The other 50% is the process you eat the food.</p>
-<p>\6.    Why chips:</p>
-<p>n Chip is perfect performer of digital information</p>
-<p>n 1. Why electronic but not machines: controlling electrons is much faster</p>
-<p>n 2. Why not vacuum tubes: chips are not easy to be broken but vacuum tubes did. And in the application, any small error can not happen or a huge trouble will be caused. In the design and production of chips, purity of silico and the precise of board are strictly controlled, which makes chips very precise. In short, chips are reliable.</p>
-<p>n 3. Chips are innovated very quickly.</p>
-<p>n For chips, its needs and technology are proportional to each other. If chips are better, more needs come. if more needs come, this will push chips to be innovated.</p>
-<p>\7.    The theory limit of chips:</p>
-<p>n Moore’s law: Every 18 months, the number of transistors in a unit area will be doubled. </p>
-<p>n To produce chips with stronger performance, the quality and quantity of transistors are needed to be improved.</p>
-<p>n There is distance between transistors and that is why Moore’s law is valid. </p>
-<p>n The diameter of a silicon atom is 0.2 nm and this distance can not be shorter as silicon atoms can not be changed.</p>
-<p>n The diameter of silicon atoms is just one of the factors. The other two are quantum physics and thermodynamics. </p>
-<p>n Thermodynamics: silicon atoms are not stationary so their motion might prevent some electrons moving. When we decrease the distance between transistors, the number of electrons is smaller and the problem of thermodynamics will be more significantly. So temperature is a problem.</p>
-<p>n Quantum physics: A phenomenon called quantum tunneling is a problem. </p>
-<p>n Quantum tunneling: Even transistors are not opened, a very small amount of electrons can still pass over. When transistors are closer, the probability of quantum tunneling is greater. </p>
-<p>n All above, that is just the problems of a transistor. In integrated circuit, there are many and more problems are met.</p>
-<p>n Also, as chips work, much heat will be produced so how to remove the heat is important. For normal pc, wind is enough. For super computer, water is needed.</p>
-<p>n There is something interesting: all above we are discussing is silicon transistor. Maybe different materials might be used and many problems might be overcomed at that time.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/Note-of-chip/" data-id="cl1k0aoot0005xcw36yrg092z" data-title="Note of chip" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Socila-Media-essay" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Socila-Media-essay" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/04/04/Socila-Media-essay/" class="article-date">
   <time class="dt-published" datetime="2022-04-04T00:16:27.000Z" itemprop="datePublished">2022-04-04</time>
@@ -498,8 +86,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/Socila-Media-essay/">Socila Media essay</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      Socila Media essay
     </h1>
   
 
@@ -564,59 +152,29 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-BCI-Brain-Computer-Interface" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/BCI-Brain-Computer-Interface/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:06:53.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2022/04/04/Note-of-chip/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          Note of chip
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/BCI-Brain-Computer-Interface/">BCI(Brain-Computer Interface)</a>
-    </h1>
   
+    <a href="/2022/04/04/BCI-Brain-Computer-Interface/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">BCI(Brain-Computer Interface)</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>BCI(Brain-Computer-Interface)</p>
-<p>\1.    BCI is trying to replacing language, which means with the help of BCI, people can communicate with others directly including people and hardware.</p>
-<p>\2.    The improvement of technology not only depends on creation but also depends on the combination of current technology.</p>
-<p>\3.    Sometimes, the improvement of technology will not be limited by theory, it might go further than theory. For example, we first meet some problems or phenominums then we introduce new theory to explain or solve it.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/BCI-Brain-Computer-Interface/" data-id="cl1jykbsc00000kw38z9bf3c5" data-title="BCI(Brain-Computer Interface)" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
   
 </article>
 
-
-
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-  </nav>
 
 </section>
         
