@@ -71,6 +71,69 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-A-timer-combining-hardware-and-software" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/10/A-timer-combining-hardware-and-software/" class="article-date">
+  <time class="dt-published" datetime="2022-04-10T06:51:13.000Z" itemprop="datePublished">2022-04-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/04/10/A-timer-combining-hardware-and-software/">A timer -- combining hardware and software</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Using Arduino to design a timer</p>
+<p>Electronic engineering is a major that combines hardware and software. Hardware is the body of electronic engineering and software is the sprite of electronic engineering. I have not tried to combine them so far, so in this article, I will report a small timer designed by myself. The timer is made up of Arduino and it is coded by Arduino language. This report will be broken into three parts – design, hardware and software. </p>
+<p>In the stage of design, we should get known what should be contained in this timer. There are two parts. First, there must be a screen to show the timer. Then, there must be components that can control the display of screen. The display of screen will be discussed in software part and the components needed will be contained in hardware part. I will introduce software part first.</p>
+<p>Before coding, we need to think about what should be displayed in the screen. From my perspectives, there are 5 stages. One to tell you this is a timer.  <img src="http://test.imgurl.org/imgs/2022/04/10/4db2cd6c33c00e6c.jpg"> </p>
+<p>​         One to ask you to set your time.    <img src="http://test.imgurl.org/imgs/2022/04/10/1945e02e93fbc294.jpg"> </p>
+<p>​         One to provide a platform for you to set the time.    <img src="http://test.imgurl.org/imgs/2022/04/10/374e25cad4149922.jpg"> </p>
+<p>​         One to display the time left.    <img src="http://test.imgurl.org/imgs/2022/04/10/950f681dfaa0064c.jpg"> </p>
+<p>​         One to tell you time is over.   <img src="http://test.imgurl.org/imgs/2022/04/10/1c29e8af0fdab985.jpg"> </p>
+<p>That is all we need to consider and following, I will show my code to realize this. Also, I want to mention that the code not only control the display of screen it also controll the process of hardware.</p>
+<p> <img src="http://test.imgurl.org/imgs/2022/04/10/d746bb7b62664b23.jpg"> </p>
+<p> <img src="http://test.imgurl.org/imgs/2022/04/10/5ed800b26d3c2758.jpg"> </p>
+<p> <img src="http://test.imgurl.org/imgs/2022/04/10/0c6a76243022d544.jpg"> </p>
+<p> <img src="http://test.imgurl.org/imgs/2022/04/10/e07a0a5f72793b73.jpg"> </p>
+<p> <img src="http://test.imgurl.org/imgs/2022/04/10/04224f338c17f4fd.jpg"> </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/4f29bc77faa5f5a8.jpg"> </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/acf4ec2f3f3da1a4.jpg"> </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/e3f6216eba7a7e76.jpg"> </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/c665c6cfaba46486.jpg"> </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/bc28b34d8693e521.jpg"> </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/636cacaced70661d.jpg"> </p>
+<p>​         The last part is about hardware. The major job of hardware is to convert our thoughts into the instructions to screen. Of all hardware, there are only two output components – screen and a buzzer. Why I need a buzzer here because user can not check the screen all the time so we need a component to tell the user that time is over. Other are input devices. For example, we need a stick to control the cursor on the screen. You can consider that the stick is a form of mouse used. Also, we need a button that can be clicked because mouse can be clicked but stick cannot so we need an extra component to realize this. In general, I divide mouse into stick and button in this project as Arduino does not provide mouse, at least I do not have mouse for Arduino.  </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/ccdfdec73c574771.jpg"> </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/e9fc22cf9878f7a8.jpg"> </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/9157b2512cf3fe53.jpg"> </p>
+<p> <img src="http://minio.xiaoz.org:9000/test-imgurl/imgs/2022/04/10/85381d7018df3b6b.jpg"> </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/10/A-timer-combining-hardware-and-software/" data-id="cl1sycs7j0000vow3eki2a0yo" data-title="A timer -- combining hardware and software" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Using-Python-to-design-a-game-2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/04/10/Using-Python-to-design-a-game-2/" class="article-date">
@@ -494,50 +557,6 @@
 
 
   
-    <article id="post-How-to-use-Python-to-fit-a-curve" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/04/04/How-to-use-Python-to-fit-a-curve/" class="article-date">
-  <time class="dt-published" datetime="2022-04-04T00:23:20.000Z" itemprop="datePublished">2022-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/04/04/How-to-use-Python-to-fit-a-curve/">How to use Python to fit a curve</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>How to use python to fit a curve</p>
-<p>This is a very meaningful topic as in engineering we might meet a lot of data and we need a curve to fit the data to get the trend. First, before we start we need a data to be fitted. Because I do not have data that can be used so I have to make up some data. I generate a data about the equation (x-2)(x-8)(x-5)+ 10. To make it more difficult, I will give some percentage error to it.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/b0b5aeddd3b31bd8.jpg"> </p>
-<p>Then, with the data, we can start fit it. First, we need a model and I will use a library called curve_fit to help me. In this library, you just need to input the data and it will return the parameter you needed for you. With the parameter, we can draw a diagraph again to check whether it works. Here, I will the result.</p>
-<p> <img src="https://s3.bmp.ovh/imgs/2022/04/04/c38fc0851d37666b.jpg"> </p>
-<p>The blue line is original data and the orange line is the data we fit. It is clearly shown that the library works well. For the blue line, there are some bends as we set percentage error. For the orange line, it is very smooth.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/04/How-to-use-Python-to-fit-a-curve/" data-id="cl1k0aoos0003xcw3557pcrpl" data-title="How to use Python to fit a curve" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
   <nav id="page-nav">
@@ -588,6 +607,10 @@
       <ul>
         
           <li>
+            <a href="/2022/04/10/A-timer-combining-hardware-and-software/">A timer -- combining hardware and software</a>
+          </li>
+        
+          <li>
             <a href="/2022/04/10/Using-Python-to-design-a-game-2/">Using Python to design a game - 2</a>
           </li>
         
@@ -601,10 +624,6 @@
         
           <li>
             <a href="/2022/04/04/Surprising-Mathe-is-hidden-in-Physics/">Surprising - Mathe is hidden in Physics</a>
-          </li>
-        
-          <li>
-            <a href="/2022/04/04/Design-a-game-using-Python-with-Pygame-1/">Design a game using Python with Pygame - 1</a>
           </li>
         
       </ul>
